@@ -11,26 +11,26 @@ input[type="text"] {
 }
 
 input.example1:focus {
-	width: 475px;
+	width: 500px;
 	background-color: #d3ca4c;
 }
 
 input.example2:focus {
-	width: 475px;
+	width: 500px;
 	background-color: #d3ca4c;
 }
 
 input.example3:focus {
-	width: 475px;
+	width: 500px;
 	background-color: #d3ca4c;
 }
 
 input.example4:focus {
-	width: 475px;
+	width: 500px;
 	background-color: #d3ca4c;
 }
 
 input.example5:focus {
-	width: 475px;
+	width: 500px;
 	background-color: #d3ca4c;
 }
