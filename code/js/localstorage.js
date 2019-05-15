@@ -3,7 +3,7 @@ function reset() {
 	location.reload();
 }
 
-function count() {
+function clickCount() {
 	if (typeof(Storage) !== "undefined") {
 		if (localStorage.clickcount) {
 			localStorage.clickcount = Number(localStorage.clickcount) + 1;
@@ -29,7 +29,7 @@ function count() {
 	}
 }
 
-function createUser() {
+function createPerson() {
 	var Name = document.getElementById("Name").value;
 	var fruit = document.getElementById("fruit").value;
 	var color = document.getElementById("color").value;
@@ -46,7 +46,7 @@ function createUser() {
 	document.getElementById("userOutputLocal").innerHTML = "Submission successful.";
 }
 
-function reveal() {
+function showPerson() {
 	var user = JSON.parse(localStorage.getItem('user'));
 	var browserName = localStorage.getItem('browser-name');
 
@@ -56,6 +56,6 @@ function reveal() {
 	document.getElementById("userOutputLocal").innerHTML = "Local Storage Output:" + "<br><b>Name:</b> " + user.Name + "<br><b>Favorite Fruit:</b> " + user.fruit 
 		+ "<br><b>Favorite Color:</b>" + user.color + "<br><b>Browser Name:</b> " + browserName;
 
-	document.getElementById("userOutputSession").innerHTML = "<br>Session Storage Output:" + "<br><b>Name:</b> " + user2.Name + "<br><b>Favorite Fruit:</b> " + user2.fruit
+	document.getElementById("userOutputSession").innerHTML = "<br>Session Storage Output:" + "<br><b>First Name:</b> " + user2.Name + "<br><b>Favorite Fruit:</b> " + user2.fruit
 		+ "<br><b>Favorite Color:</b>" + user2.color + "<br><b>Browser Name:</b> " + browserName2;
 }
