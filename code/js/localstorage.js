@@ -11,9 +11,9 @@ function Count() {
 			localStorage.clickcount = 1;
 		}
 
-		document.getElementById("localResult").innerHTML = "Local Storage Count: " + localStorage.clickcount + " click(s)";
+		document.getElementById("localClicks").innerHTML = "Your Local Storage Count: " + localStorage.clickcount + " click(s)";
 	} else {
-		document.getElementById("localResult").innerHTML = "Error: Your browser does not support local storage.";
+		document.getElementById("localClicks").innerHTML = "Error: Your browser does not support local storage.";
 	}
 
 	if (typeof(Storage) !== "undefined") {
@@ -23,9 +23,9 @@ function Count() {
 			sessionStorage.clicks = 1;
 		}
 
-		document.getElementById("sessionResult").innerHTML = "Session Storage Count: " + sessionStorage.clicks + " click(s)";
+		document.getElementById("sessionClicks").innerHTML = "Your Session Storage Count: " + sessionStorage.clicks + " click(s)";
 	} else {
-		document.getElementById("sessionResult").innerHTML = "Error: Your browser does not support session storage.";
+		document.getElementById("sessionClicks").innerHTML = "Error: Your browser does not support session storage.";
 	}
 }
 
@@ -49,9 +49,9 @@ function Reveal() {
 
 	var user2 = JSON.parse(sessionStorage.getItem('user'));
 
-	document.getElementById("userOutputLocal").innerHTML = "Local Storage Output:" + "<br>Name:" + user.Name + "<br>Favorite Fruit:" + user.fruit 
+	document.getElementById("localStorageOutput").innerHTML = "Local Storage Output:" + "<br>Name:" + user.Name + "<br>Favorite Fruit:" + user.fruit 
 		+ "<br>Favorite Color:" + user.color;
 
-	document.getElementById("userOutputSession").innerHTML = "<br>Session Storage Output:" + "<br>First Name:" + user2.Name + "<br>Favorite Fruit:" + user2.fruit
+	document.getElementById("sessionStorageOutput").innerHTML = "<br>Session Storage Output:" + "<br>First Name:" + user2.Name + "<br>Favorite Fruit:" + user2.fruit
 		+ "<br>Favorite Color:" + user2.color;
 }
