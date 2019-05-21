@@ -4,26 +4,22 @@ function Reset() {
 }
 
 function Count() {
-	
-		if (localStorage.count) {
-			localStorage.count = Number(localStorage.count) + 1;
+		if (localStorage.clickcount) {
+			localStorage.clickcount = Number(localStorage.clickcount) + 1;
 		} else {
-			localStorage.count = 1;
+			localStorage.clickcount = 1;
 		}
 
-		document.getElementById("localClicks").innerHTML = "Your Local Storage Count: " + localStorage.clickcount;
-	
+		document.getElementById("localClicks").innerHTML = "Your Local Storage Count: " + localStorage.clickcount + " click(s)";
+	} 
 
 	
-		if (sessionStorage.click) {
-			sessionStorage.click = Number(sessionStorage.click) + 1;
-		} else {
-			sessionStorage.click = 1;
-		}
+		if (sessionStorage.clicks) {
+			sessionStorage.clicks = Number(sessionStorage.clicks) + 1;
+		} 
 
-		document.getElementById("sessionClicks").innerHTML = "Your Session Storage Count: " + sessionStorage.click;
+		document.getElementById("sessionClicks").innerHTML = "Your Session Storage Count: " + sessionStorage.clicks + " click(s)";
 	
-}
 
 function User() {
 	var Name = document.getElementById("Name").value;
