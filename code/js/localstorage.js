@@ -4,6 +4,7 @@ function Reset() {
 }
 
 function Count() {
+	if (typeof(Storage) !== "undefined") {
 		if (localStorage.count) {
 			localStorage.count = Number(localStorage.count) + 1;
 		} else {
@@ -11,10 +12,11 @@ function Count() {
 		}
 
 		document.getElementById("localClicks").innerHTML = "Your Local Storage Count: " + localStorage.count;
-	} 
+	} else {
+		document.getElementById("localClicks").innerHTML = "Please try again";
+	}
 
-function Resett(){
-	
+	if (typeof(Storage) !== "undefined") {
 		if (sessionStorage.click) {
 			sessionStorage.click = Number(sessionStorage.click) + 1;
 		} else {
@@ -22,9 +24,10 @@ function Resett(){
 		}
 
 		document.getElementById("sessionClicks").innerHTML = "Your Session Storage Count: " + sessionStorage.click;
+	} else {
+		document.getElementById("sessionClicks").innerHTML = "Please try again";
 	}
-
-
+}
 
 function User() {
 	var Name = document.getElementById("Name").value;
