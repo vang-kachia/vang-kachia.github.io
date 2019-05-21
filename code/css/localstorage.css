@@ -6,8 +6,8 @@ input[type="text"] {
 	width: 350px;
 	outline: none;
 	padding: 10px;
-	border: 1px solid #000;
-	border-radius: 7px;
+	border: none;
+	border-radius: none;
 	margin: 6px 0px 10px 0px;
 	transition: 500ms linear;
 	background-color: #d3ca4c;
