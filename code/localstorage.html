@@ -2,32 +2,35 @@
 <html>
 	<head>
 		<meta charset=utf-8>
-		<title>Local Storage - API, Storing and Retrieving Simple Data, Arrays, Associative Arrays, and Objects</title>
+		<meta name="description" content="Local Storage page">
+		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" type="text/css" href="css/localstorage.css">
-		<script type="text/javascript" src="js/localstorage.js"></script>
+		<script src="js/localstorage.js"></script>
+		<title>Local Storage - API, Storing and Retrieving Simple Data, Arrays, Associative Arrays, and Objects</title>
 	</head>
 
 	<body>
 		<main>
-			<h2>Local Storage - API, Storing and Retrieving Simple Data, Arrays, Associative Arrays, and Objects</h2>
+			<h1>Local Storage - API</h1>
+			<h2>Storing + Retrieving Simple Data, Arrays, Associative Arrays and Objects</h2>
 			<p>The count button will track how many times you've clicked the button.</p>
 			<p>It will display both localStorage and sessionStorage. The sessionStorage will reset when you close the browser, but the localStorage will not.</p>
-			<button class="myButtons" type="button" onclick="clickCount()">Count</button>
-			<button class="myButtons" type="button" onclick="reset()">Reset</button>
+			<button class="myButtons" type="button" onclick="Count()">Count</button>
+			<button class="myButtons" type="button" onclick="Reset()">Reset</button>
 		
 			<p></p>
 			<div id="localResult"></div>
 			<div id="sessionResult"></div>
-
+			
 			<hr>
 
-			<p>Here we will store information. LocalStorage will still keep your information, while sessionStorage will not.</p>
+			<p>LocalStorage will keep your information, while sessionStorage will not once you exit the page.</p>
 			<input type="text" id="Name" placeholder="Name" class="example1"> <br>
 			<input type="text" id="fruit" placeholder="Favorite Fruit" class="example2"> <br>
 			<input type="text" id="color" placeholder="Favorite Color" class="example3"> <br>
-			<button class="myButtons" type="button" onclick="createPerson()">Enter</button>
-			<button class="myButtons" type="button" onclick="showPerson()">Reveal</button>
-			<button class="myButtons" type="button" onclick="reset()">Reset</button>
+			<button class="myButtons" type="button" onclick="User()">Enter</button>
+			<button class="myButtons" type="button" onclick="Reveal()">Reveal</button>
+			<button class="myButtons" type="button" onclick="Reset()">Reset</button>
 			<p></p>
 			<div id="userOutputLocal"></div>
 			<div id="userOutputSession"></div>

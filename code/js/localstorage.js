@@ -1,9 +1,9 @@
-function reset() {
+function Reset() {
 	window.localStorage.clear();
 	location.reload();
 }
 
-function clickCount() {
+function Count() {
 	if (typeof(Storage) !== "undefined") {
 		if (localStorage.clickcount) {
 			localStorage.clickcount = Number(localStorage.clickcount) + 1;
@@ -29,7 +29,7 @@ function clickCount() {
 	}
 }
 
-function createPerson() {
+function User() {
 	var Name = document.getElementById("Name").value;
 	var fruit = document.getElementById("fruit").value;
 	var color = document.getElementById("color").value;
@@ -46,7 +46,7 @@ function createPerson() {
 	document.getElementById("userOutputLocal").innerHTML = "Submission successful.";
 }
 
-function showPerson() {
+function Reveal() {
 	var user = JSON.parse(localStorage.getItem('user'));
 	var browserName = localStorage.getItem('browser-name');
 
