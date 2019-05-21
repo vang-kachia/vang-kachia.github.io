@@ -37,9 +37,9 @@ function User() {
 
 	var person = {Name: Name, fruit: fruit, color: color};
 
-	localStorage.setItem('user', JSON.stringify(person));
+	localStorage.setItem('output', JSON.stringify(person));
 
-	sessionStorage.setItem('user', JSON.stringify(person));
+	sessionStorage.setItem('output', JSON.stringify(person));
 
 	document.getElementById("localStorageOutput").innerHTML = "You have entered the information!";
 }
