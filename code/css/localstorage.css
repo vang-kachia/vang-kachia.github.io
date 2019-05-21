@@ -1,4 +1,7 @@
-/* File: localStorage.css */
+/* This is localstorage.css file for localstorage.html */
+
+
+
 input[type="text"] {
 	width: 350px;
 	outline: none;
@@ -10,27 +13,18 @@ input[type="text"] {
 	background-color: #d3ca4c;
 }
 
-input.example1:focus {
+input.placeholder1:focus {
 	width: 500px;
 	background-color: #d3ca4c;
 }
 
-input.example2:focus {
+input.placeholder2:focus {
 	width: 500px;
 	background-color: #d3ca4c;
 }
 
-input.example3:focus {
+input.placeholder3:focus {
 	width: 500px;
 	background-color: #d3ca4c;
 }
 
-input.example4:focus {
-	width: 500px;
-	background-color: #d3ca4c;
-}
-
-input.example5:focus {
-	width: 500px;
-	background-color: #d3ca4c;
-}
