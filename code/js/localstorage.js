@@ -13,6 +13,7 @@ function Count() {
 		document.getElementById("localClicks").innerHTML = "Your Local Storage Count: " + localStorage.count;
 	} 
 
+function Resett(){
 	
 		if (sessionStorage.click) {
 			sessionStorage.click = Number(sessionStorage.click) + 1;
@@ -21,7 +22,8 @@ function Count() {
 		}
 
 		document.getElementById("sessionClicks").innerHTML = "Your Session Storage Count: " + sessionStorage.click;
-	
+	}
+
 
 
 function User() {
