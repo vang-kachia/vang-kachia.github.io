@@ -4,24 +4,26 @@ function Reset() {
 }
 
 function Count() {
-		if (localStorage.clickcount) {
-			localStorage.clickcount = Number(localStorage.clickcount) + 1;
+		if (localStorage.count) {
+			localStorage.count = Number(localStorage.count) + 1;
 		} else {
-			localStorage.clickcount = 1;
+			localStorage.count = 1;
 		}
 
-		document.getElementById("localClicks").innerHTML = "Your Local Storage Count: " + localStorage.clickcount + " click(s)";
+		document.getElementById("localClicks").innerHTML = "Your Local Storage Count: " + localStorage.count;
 	} 
 
 	
-		if (sessionStorage.clicks) {
-			sessionStorage.clicks = Number(sessionStorage.clicks) + 1;
+		if (sessionStorage.click) {
+			sessionStorage.click = Number(sessionStorage.click) + 1;
 		} else {
-			sessionStorage.clickcount = 1;
+			sessionStorage.click = 1;
 		}
 
-		document.getElementById("sessionClicks").innerHTML = "Your Session Storage Count: " + sessionStorage.clicks + " click(s)";
+		document.getElementById("sessionClicks").innerHTML = "Your Session Storage Count: " + sessionStorage.click;
 	
+
+
 function User() {
 	var Name = document.getElementById("Name").value;
 	var fruit = document.getElementById("fruit").value;
