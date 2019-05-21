@@ -3,7 +3,7 @@
 
 
 input[type="text"] {
-	width: 100px;
+	width: 250px;
 	outline: none;
 	padding: 5px;
 	border: 2px solid #000;
@@ -14,17 +14,17 @@ input[type="text"] {
 }
 
 input.placeholder1:focus {
-	width: 500px;
+	width: 250px;
 	background-color: #d3ca4c;
 }
 
 input.placeholder2:focus {
-	width: 500px;
+	width: 250x;
 	background-color: #d3ca4c;
 }
 
 input.placeholder3:focus {
-	width: 500px;
+	width: 250px;
 	background-color: #d3ca4c;
 }
 
