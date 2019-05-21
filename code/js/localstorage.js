@@ -3,15 +3,15 @@ function Reset() {
 	location.reload();
 }
 
-function Count() {
-		if (localStorage.clickcount) {
+function Count() 
+		localStorage.clickcount
 			localStorage.clickcount = Number(localStorage.clickcount) + 1;
-		} else {
+		
 			localStorage.clickcount = 1;
-		}
+		
 
-		document.getElementById("localClicks").innerHTML = "Your Local Storage Count: " + localStorage.clickcount + " click(s)";
-	} 
+		document.getElementById("localClicks").innerHTML = "Your Local Storage Count: " + localStorage.clickcount;
+	
 
 	
 		if (sessionStorage.clicks) {
