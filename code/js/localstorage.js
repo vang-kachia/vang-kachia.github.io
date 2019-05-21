@@ -45,13 +45,13 @@ function User() {
 }
 
 function Reveal() {
-	var user = JSON.parse(localStorage.getItem('user'));
+	var output = JSON.parse(localStorage.getItem('output'));
 
-	var user2 = JSON.parse(sessionStorage.getItem('user'));
+	var output2 = JSON.parse(sessionStorage.getItem('output'));
 
-	document.getElementById("localStorageOutput").innerHTML = "<b>Local Storage Output:</b> " + "<br>Name: " + user.Name + "<br>Favorite Fruit: " + user.fruit 
-		+ "<br>Favorite Color: " + user.color;
+	document.getElementById("localStorageOutput").innerHTML = "<b>Local Storage Output:</b> " + "<br>Name: " + output.Name + "<br>Favorite Fruit: " + output.fruit 
+		+ "<br>Favorite Color: " + output.color;
 
-	document.getElementById("sessionStorageOutput").innerHTML = "<br><b>Session Storage Output:</b> " + "<br>Name: " + user2.Name + "<br>Favorite Fruit: " + user2.fruit
-		+ "<br>Favorite Color: " + user2.color;
+	document.getElementById("sessionStorageOutput").innerHTML = "<br><b>Session Storage Output:</b> " + "<br>Name: " + output2.Name + "<br>Favorite Fruit: " + output2.fruit
+		+ "<br>Favorite Color: " + output2.color;
 }

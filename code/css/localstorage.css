@@ -5,7 +5,7 @@
 input[type="text"] {
 	width: 350px;
 	outline: none;
-	padding: 10px;
+	padding: none;
 	border: 3px solid #000;
 	border-radius: none;
 	margin: 6px 0px 10px 0px;
