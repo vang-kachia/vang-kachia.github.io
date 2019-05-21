@@ -49,9 +49,9 @@ function Reveal() {
 
 	var user2 = JSON.parse(sessionStorage.getItem('user'));
 
-	document.getElementById("userOutputLocal").innerHTML = "Local Storage Output:" + "<br><b>Name:</b> " + user.Name + "<br><b>Favorite Fruit:</b> " + user.fruit 
-		+ "<br><b>Favorite Color:</b>" + user.color;
+	document.getElementById("userOutputLocal").innerHTML = "Local Storage Output:" + "<br>Name:" + user.Name + "<br>Favorite Fruit:" + user.fruit 
+		+ "<br>Favorite Color:" + user.color;
 
-	document.getElementById("userOutputSession").innerHTML = "<br>Session Storage Output:" + "<br><b>First Name:</b> " + user2.Name + "<br><b>Favorite Fruit:</b> " + user2.fruit
-		+ "<br><b>Favorite Color:</b>" + user2.color;
+	document.getElementById("userOutputSession").innerHTML = "<br>Session Storage Output:" + "<br>First Name:" + user2.Name + "<br>Favorite Fruit:" + user2.fruit
+		+ "<br>Favorite Color:" + user2.color;
 }
