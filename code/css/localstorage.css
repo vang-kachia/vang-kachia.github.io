@@ -12,6 +12,17 @@ input[type="text"] {
 	transition: none;
 	background-color: #d3ca4c;
 }
+h1 {
+	margin-right: 100px;
+	margin-left: 150px;
+}
+
+h2 {
+
+	margin-right: 150px;
+	margin-left: 20px;
+	  
+}
 
 p {
 
