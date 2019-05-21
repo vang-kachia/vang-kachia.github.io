@@ -3,24 +3,25 @@ function Reset() {
 	location.reload();
 }
 
-function Count() 
-		localStorage.clickcount
+function Count() {
+		if (localStorage.clickcount) {
 			localStorage.clickcount = Number(localStorage.clickcount) + 1;
-		
+		} else {
 			localStorage.clickcount = 1;
-		
+		}
 
-		document.getElementById("localClicks").innerHTML = "Your Local Storage Count: " + localStorage.clickcount;
-	
+		document.getElementById("localClicks").innerHTML = "Your Local Storage Count: " + localStorage.clickcount + " click(s)";
+	} 
 
 	
 		if (sessionStorage.clicks) {
 			sessionStorage.clicks = Number(sessionStorage.clicks) + 1;
-		} 
+		} else {
+			sessionStorage.clickcount = 1;
+		}
 
 		document.getElementById("sessionClicks").innerHTML = "Your Session Storage Count: " + sessionStorage.clicks + " click(s)";
 	
-
 function User() {
 	var Name = document.getElementById("Name").value;
 	var fruit = document.getElementById("fruit").value;
