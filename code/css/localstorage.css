@@ -13,6 +13,12 @@ input[type="text"] {
 	background-color: #d3ca4c;
 }
 
+p {
+
+	margin-right: 150px;
+	margin-left: 20px;
+  }
+
 .button1 {
 	background-color: #4CAF50;
 	border: none;
