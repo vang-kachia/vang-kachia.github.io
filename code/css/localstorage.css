@@ -6,10 +6,10 @@ input[type="text"] {
 	width: 350px;
 	outline: none;
 	padding: 10px;
-	border: none;
-	border-radius: none;
+	border: 5px solid #000;
+	border-radius: 7px;
 	margin: 6px 0px 10px 0px;
-	transition: 500ms linear;
+	transition: none;
 	background-color: #d3ca4c;
 }
 
@@ -27,4 +27,6 @@ input.placeholder3:focus {
 	width: 500px;
 	background-color: #d3ca4c;
 }
+
+
 
