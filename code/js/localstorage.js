@@ -5,27 +5,27 @@ function Reset() {
 
 function Count() {
 	if (typeof(Storage) !== "undefined") {
-		if (localStorage.clickcount) {
-			localStorage.clickcount = Number(localStorage.clickcount) + 1;
+		if (localStorage.count) {
+			localStorage.count = Number(localStorage.count) + 1;
 		} else {
 			localStorage.clickcount = 1;
 		}
 
-		document.getElementById("localClicks").innerHTML = "Your Local Storage Count: " + localStorage.clickcount + " click(s)";
+		document.getElementById("localClicks").innerHTML = "Your Local Storage Count: " + localStorage.count;
 	} else {
-		document.getElementById("localClicks").innerHTML = "Error: Your browser does not support local storage.";
+		document.getElementById("localClicks").innerHTML = "Please try again.";
 	}
 
 	if (typeof(Storage) !== "undefined") {
-		if (sessionStorage.clicks) {
-			sessionStorage.clicks = Number(sessionStorage.clicks) + 1;
+		if (sessionStorage.onclick) {
+			sessionStorage.onclick = Number(sessionStorage.onclick) + 1;
 		} else {
-			sessionStorage.clicks = 1;
+			sessionStorage.onclick = 1;
 		}
 
-		document.getElementById("sessionClicks").innerHTML = "Your Session Storage Count: " + sessionStorage.clicks;
+		document.getElementById("sessionClicks").innerHTML = "Your Session Storage Count: " + sessionStorage.onclick;
 	} else {
-		document.getElementById("sessionClicks").innerHTML = "Error: Your browser does not support session storage.";
+		document.getElementById("sessionClicks").innerHTML = "Please try again.";
 	}
 }
 
