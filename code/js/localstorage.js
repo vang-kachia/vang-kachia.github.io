@@ -4,21 +4,24 @@ function Reset() {
 }
 
 function Count() {
-
-			localStorage.clickcount = Number(localStorage.clickcount) + 1;
-		
-		
-		
-
-		document.getElementById("localClicks").innerHTML = "Your Local Storage Count: " + localStorage.clickcount + " click(s)";
 	
+		if (localStorage.count) {
+			localStorage.count = Number(localStorage.count) + 1;
+		} else {
+			localStorage.count = 1;
+		}
+
+		document.getElementById("localClicks").innerHTML = "Your Local Storage Count: " + localStorage.clickcount;
 	
 
 	
-			sessionStorage.clicks = Number(sessionStorage.clicks) + 1;
-		
+		if (sessionStorage.click) {
+			sessionStorage.click = Number(sessionStorage.click) + 1;
+		} else {
+			sessionStorage.click = 1;
+		}
 
-		document.getElementById("sessionClicks").innerHTML = "Your Session Storage Count: " + sessionStorage.clicks + " click(s)";
+		document.getElementById("sessionClicks").innerHTML = "Your Session Storage Count: " + sessionStorage.click;
 	
 }
 
