@@ -38,24 +38,20 @@ function User() {
 	var person = {Name: Name, fruit: fruit, color: color};
 
 	localStorage.setItem('user', JSON.stringify(person));
-	localStorage.setItem('browser-name', navigator.appCodeName);
 
 	sessionStorage.setItem('user', JSON.stringify(person));
-	sessionStorage.setItem('browser-name', navigator.appCodeName);
 
-	document.getElementById("userOutputLocal").innerHTML = "Submission successful.";
+	document.getElementById("userOutputLocal").innerHTML = "You have entered the information!";
 }
 
 function Reveal() {
 	var user = JSON.parse(localStorage.getItem('user'));
-	var browserName = localStorage.getItem('browser-name');
 
 	var user2 = JSON.parse(sessionStorage.getItem('user'));
-	var browserName2 = sessionStorage.getItem('browser-name');
 
 	document.getElementById("userOutputLocal").innerHTML = "Local Storage Output:" + "<br><b>Name:</b> " + user.Name + "<br><b>Favorite Fruit:</b> " + user.fruit 
-		+ "<br><b>Favorite Color:</b>" + user.color + "<br><b>Browser Name:</b> " + browserName;
+		+ "<br><b>Favorite Color:</b>" + user.color;
 
 	document.getElementById("userOutputSession").innerHTML = "<br>Session Storage Output:" + "<br><b>First Name:</b> " + user2.Name + "<br><b>Favorite Fruit:</b> " + user2.fruit
-		+ "<br><b>Favorite Color:</b>" + user2.color + "<br><b>Browser Name:</b> " + browserName2;
+		+ "<br><b>Favorite Color:</b>" + user2.color;
 }
