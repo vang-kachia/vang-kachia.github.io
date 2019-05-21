@@ -8,7 +8,7 @@ function Count() {
 		if (localStorage.count) {
 			localStorage.count = Number(localStorage.count) + 1;
 		} else {
-			localStorage.clickcount = 1;
+			localStorage.count = 1;
 		}
 
 		document.getElementById("localClicks").innerHTML = "Your Local Storage Count: " + localStorage.count;
