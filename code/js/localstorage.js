@@ -1,8 +1,3 @@
-function Reset() {
-	window.localStorage.clear();
-	location.reload();
-}
-
 function Count() {
 	if (typeof(Storage) !== "undefined") {
 		if (localStorage.count) {
@@ -28,6 +23,15 @@ function Count() {
 		document.getElementById("sessionClicks").innerHTML = "Please try again.";
 	}
 }
+
+
+
+function Reset() {
+	window.localStorage.clear();
+	location.reload();
+}
+
+
 
 function User() {
 	var Name = document.getElementById("Name").value;
