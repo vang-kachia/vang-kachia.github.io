@@ -11,7 +11,7 @@ input[type="text"] {
 }
 
 input.placeholder1:focus {
-    width: 250px;
+    width: 150px;
 	background-color: #B0E0E6;
 }
 
