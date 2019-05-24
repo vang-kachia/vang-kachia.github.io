@@ -1,5 +1,6 @@
 input.placeholder1:focus {
-	width: 230px;
+    width: 200px;
+    height:200px;
 	background-color: #B0E0E6;
 }
 
