@@ -1,3 +1,6 @@
+// JavaScript file for loops
+
+// Conditional Statement
 
 function numberGame() {
     var userInput = document.getElementById("userInput").value;
@@ -30,6 +33,8 @@ function numberGame() {
     document.getElementById('numberOutput').innerHTML = userResponse;
          }
 
+//  Loops, Functions, Variables
+
 function fruitLoop() {
         var fruits = ["Mango", "Guava", "Dragonfruit", "Coconut", "Lychee"];
         var text = "";
@@ -40,6 +45,7 @@ function fruitLoop() {
         document.getElementById("fruitOutput").innerHTML = text;
     }
 
+// Associative Arrays
 
 function infoArray() {
     var season = document.getElementById("season").value;
@@ -52,5 +58,6 @@ function infoArray() {
 	document.getElementById("arrayOutput").innerHTML = "{Season: " + arrayOutput["season"]
 		+ ", Movie: " + arrayOutput["movie"] + ", Drink: " + arrayOutput["drink"] + "}";
 }
-}
+
+// Parameters and Arrays
 
