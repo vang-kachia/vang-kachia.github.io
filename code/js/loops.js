@@ -4,10 +4,8 @@ function numberLoop() {
     var response;
 
 
-    if (userInput < 1) {
-    response = "Make sure the number is between 1-10.";
-    }else if (userInput = 1) {
-        response = "Try again!";
+    if (userInput = 1) {
+    response = "Try again.";
     } else if (userInput = 2) {
         response = "Sorry, try again!"; 
     } else if (userInput = 3) {
@@ -25,11 +23,9 @@ function numberLoop() {
     } else if (userInput = 9) {
         response = "That number is too high.";
     } else if (userInput = 10) {
-        response = "Definitely, try again!";
-    } else if (userInput < 11) {
-        response = "you entered 10";                                                                                
+        response = "Definitely, try again!";                                                                               
     } else {
-         response = "Make sure the number is between 1-10.";
+         response = "That number is out of range.";
     }
     document.getElementById('numberOutput').innerHTML = response;
         
