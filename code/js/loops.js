@@ -42,6 +42,15 @@ function fruitLoop() {
 
 
 function infoArray() {
-    
+    var season = document.getElementById("season").value;
+	var movie = document.getElementById("movie").value;
+	var drink = document.getElementById("drink").value;
+
+
+	var arrayOutput = {"season": season, "movie": movie, "drink": drink};
+
+	document.getElementById("arrayOutput").innerHTML = "{Season: " + arrayOutput["season"]
+		+ ", Movie: " + arrayOutput["movie"] + ", Drink: " + arrayOutput["drink"] + "}";
+}
 }
 
