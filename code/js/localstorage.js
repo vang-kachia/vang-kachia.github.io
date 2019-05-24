@@ -1,3 +1,7 @@
+// JavaScript file for Local Storage
+
+// Function to track button clicks
+
 function Count() {
 	if (typeof(Storage) !== "undefined") {
 		if (localStorage.count) {
@@ -31,7 +35,7 @@ function Reset() {
 	location.reload();
 }
 
-
+// Function to store user input
 
 function User() {
 	var Name = document.getElementById("Name").value;
