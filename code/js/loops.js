@@ -39,5 +39,5 @@ function fruitLoop() {
         }
         document.getElementById("fruitOutput").innerHTML = text;
     }
-    
+
 
