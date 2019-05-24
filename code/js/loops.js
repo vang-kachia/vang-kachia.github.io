@@ -1,5 +1,9 @@
 
 function numberLoop() {
+    var userInput = document.getElementById("userInput").value;
+    var response;
+
+
     if (userInput < 1) {
     response = "Make sure the number is between 1-10.";
     }else if (userInput = 1) {
@@ -27,10 +31,8 @@ function numberLoop() {
     } else {
          response = "Make sure the number is between 1-10.";
     }
-        var userInput = document.getElementById("userInput").value;
-        var response;
-        document.getElementById('output').innerHTML = response;
-        <div id="output"></div>
+    document.getElementById('output').innerHTML = response;
+        
 
         
     }
