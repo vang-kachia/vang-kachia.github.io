@@ -1,5 +1,5 @@
 
-function numberLoop() {
+function numberGame() {
     var userInput = document.getElementById("userInput").value;
     var userResponse;
 
@@ -28,7 +28,16 @@ function numberLoop() {
         userResponse = "That number is out of range.";
     }
     document.getElementById('numberOutput').innerHTML = userResponse;
-        
+         }
 
-        
+function fruitLoop() {
+        var fruits = ["Mango", "Guava", "Dragonfruit", "Coconut", "Lychee"];
+        var text = "";
+        var i;
+        for(i = 0; i < fruits.length; i++) {
+            text += fruits[i] + "<br>";
+        }
+        document.getElementById("fruitOutput").innerHTML = text;
     }
+    
+

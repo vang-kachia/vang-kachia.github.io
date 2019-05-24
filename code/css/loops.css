@@ -24,5 +24,18 @@ text-decoration: none;
 display: inline-block;
 font-size: 15px;
 margin: 4px 2px;
-cursor: pointer;} 
+cursor: pointer;
+} 
+
+.button2 {background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 9px 9px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+} 
 
