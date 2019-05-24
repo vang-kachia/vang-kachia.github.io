@@ -31,7 +31,7 @@ function numberLoop() {
     } else {
          response = "Make sure the number is between 1-10.";
     }
-    document.getElementById('output').innerHTML = response;
+    document.getElementById('numberOutput').innerHTML = response;
         
 
         
