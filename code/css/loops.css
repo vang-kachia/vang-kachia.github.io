@@ -15,6 +15,21 @@ input.placeholder1:focus {
 	background-color: #B0E0E6;
 }
 
+input.placeholder2:focus {
+    width: 150px;
+	background-color: #B0E0E6;
+}
+
+input.placeholder3:focus {
+    width: 150px;
+	background-color: #B0E0E6;
+}
+
+input.placeholder4:focus {
+    width: 150px;
+	background-color: #B0E0E6;
+}
+
 .button1 {background-color: #008CBA;
 border: none;
 color: white;
@@ -39,3 +54,14 @@ cursor: pointer;
     cursor: pointer;
 } 
 
+.button3 {background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 9px 9px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

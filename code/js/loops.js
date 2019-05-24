@@ -41,3 +41,7 @@ function fruitLoop() {
     }
 
 
+function infoArray() {
+    
+}
+
