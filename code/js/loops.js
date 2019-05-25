@@ -74,7 +74,7 @@ function paramArray() {
     var paramRange = range(list);
 
  document.getElementById("paramOutput").innerHTML = "Here is your array: " + "[" + list + "]";
- document.getElementById("rangeOutput").innerHTML = "Here is the range of your array: " + range;
+ document.getElementById("rangeOutput").innerHTML = "Here is the range of your array: " + paramRange;
 
 }
 
@@ -87,9 +87,9 @@ function sort(list) {
     if (swap <= list[j]) {
         break;
         }
-    list[j - 1] = list[j];
-        }
-    list[j - 1] = swap;
+        list[j - 1] = list[j];
+    }
+        list[j - 1] = swap;
     }
 }
 
