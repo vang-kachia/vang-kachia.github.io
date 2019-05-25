@@ -67,17 +67,18 @@ function paramArray() {
     if (isNaN(numArray)) {
         document.getElementById("paramOutput").innerHTML = "Click the button and try again."
     } else {
-        var list = paramCreated(txtArray);
+        var list = paramCreated(numArray);
     }
 
     var paramSort = sort(list);
-    var paramRange = Range(list);
- document.getElementById("arrayOutput").innerHTML = "Here is your array: " + "[" + paramSort + "]";
+    var paramRange = range(list);
+
+ document.getElementById("paramOutput").innerHTML = "Here is your array: " + "[" + paramSort + "]";
  document.getElementById("rangeOutput").innerHTML = "Here is the range of your array: " + paramRange;
 
 }
 
-function Range(list) {
+function range(list) {
 	var firstValue = list[0];
 	var lastValue = list[list.length - 1];
 	var rangeofParam = lastValue - firstValue;
