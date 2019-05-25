@@ -71,7 +71,6 @@ function paramArray() {
     }
 
     var paramSort = sort(list);
-    var paramRange = range(list);
 
  document.getElementById("paramOutput").innerHTML = "Here is your array: " + "[" + list + "]";
 
