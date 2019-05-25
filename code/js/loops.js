@@ -62,12 +62,12 @@ function infoArray() {
 // Parameters and Arrays
 
 function paramArray() {
-    var numArray = parseInt(prompt("Input the amount of numbers you want in your array!"));
+    var txtArray = parseInt(prompt("Input the amount of numbers you want in your array!"));
 
-    if (isNaN(numArray)) {
+    if (isNaN(txtArray)) {
         document.getElementById("paramOutput").innerHTML = "Click the button and try again."
     } else {
-        var list = createpArray(numArray);
+        var list = createpArray(txtArray);
     }
 
     var paramSort = sort(list);
