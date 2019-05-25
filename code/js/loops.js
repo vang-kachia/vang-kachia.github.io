@@ -74,7 +74,7 @@ function paramArray() {
     var paramRange = range(list);
 
  document.getElementById("paramOutput").innerHTML = "Here is your array: " + "[" + list + "]";
- document.getElementById("rangeOutput").innerHTML = "Here is the range of your array: " + paramRange;
+ document.getElementById("rangeOutput").innerHTML = "Here is the range of your array: " + range;
 
 }
 
