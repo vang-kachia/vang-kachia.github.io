@@ -78,34 +78,34 @@ function paramArray() {
 
 }
 
-function sort(list) {
-    var firstValue = 0;
-     var lastValue = list.length - 1;
-    for (var i = lastValue - 1;  i >= firstValue;  i--) {
-         var swap = list[i];
-    for (var j = i + 1;  j <= lastValue;  j++) {
-    if (swap <= list[j]) {
-        break;
-        }
-        list[j - 1] = list[j];
-    }
-        list[j - 1] = swap;
-    }
-}
-
-function createpArray (txtArray) {
+function createpArray(txtArray) {
     var i = 0;
     var list = [];
     do {
-    var txtArray = parseFloat(prompt("Enter the number of your array."));
-    if (isNaN(txtArray)) {
-        break;
-    } else {
-        list.push(txtArray);
-        i++;
-    }
+        var txtArray = parseFloat(prompt("Enter the number of your array."));
+        if (isNaN(txtArray)) {
+            break;
+        } else {
+            list.push(txtArray);
+            i++;
+         }
+    } while (i < txtArray);
+    return list;
 }
-    while (i < txtArray);
+
+function sort(list) {
+    var firstValue = 0;
+    var lastValue = list.length - 1;
+        for (var i = lastValue - 1;  i >= firstValue;  i--) {
+            var swap = list[i];
+            for (var j = i + 1;  j <= lastValue;  j++) {
+                if (swap <= list[j]) {
+                    break;
+                }
+                list[j - 1] = list[j];
+        }
+        list[j - 1] = swap;
+    }
     return list;
 }
 
