@@ -52,7 +52,7 @@ function infoArray() {
 	var movie = document.getElementById("movie").value;
 	var drink = document.getElementById("drink").value;
 
-
+// Output the information that was entered
 	var arrayOutput = {"season": season, "movie": movie, "drink": drink};
 
 	document.getElementById("arrayOutput").innerHTML = "{Season: " + arrayOutput["season"]
@@ -61,3 +61,26 @@ function infoArray() {
 
 // Parameters and Arrays
 
+function paramArrays() {
+    var numArray = parseInt(prompt("Enter the number of your array!"));
+
+    if (isNaN(numArray)) {
+        document.getElementById("paramOutputt").innerHTML = "Click the button and try again."
+    } else {
+        var input = paramCreated(numArray);
+    }
+
+    var paramSort = sort(input);
+    var paramRange = Range(input);
+ document.getElementById("arrayOutput").innerHTML = "Here is your array: " + "[" + paramSort + "]";
+ document.getElementById("rangeOutput").innerHTML = "Here is the range of your array: " + paramRange;
+
+}
+
+function Range(list) {
+	var firstValue = list[0];
+	var lastValue = list[list.length - 1];
+	var range = lastValue - firstValue;
+
+	return range;
+}

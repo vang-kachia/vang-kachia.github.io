@@ -65,3 +65,15 @@ cursor: pointer;
     margin: 4px 2px;
     cursor: pointer;
 }
+
+.button4 {background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 12px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
