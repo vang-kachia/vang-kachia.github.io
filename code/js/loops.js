@@ -80,7 +80,7 @@ function paramArrays() {
 function Range(list) {
 	var firstValue = list[0];
 	var lastValue = list[list.length - 1];
-	var range = lastValue - firstValue;
+	var rangeofParam = lastValue - firstValue;
 
-	return range;
+	return rangeofParam;
 }
