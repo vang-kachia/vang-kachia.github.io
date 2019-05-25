@@ -61,7 +61,7 @@ function infoArray() {
 
 // Parameters and Arrays
 
-function paramArrays() {
+function paramArray() {
     var numArray = parseInt(prompt("Enter the number of your array!"));
 
     if (isNaN(numArray)) {
