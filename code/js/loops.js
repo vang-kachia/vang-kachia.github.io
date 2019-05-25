@@ -62,12 +62,12 @@ function infoArray() {
 // Parameters and Arrays
 
 function paramArray() {
-    var numArray = parseInt(prompt("Enter the number of your array!"));
+    var numArray = parseInt(prompt("Input the amount of numbers you want in your array!"));
 
     if (isNaN(numArray)) {
         document.getElementById("paramOutput").innerHTML = "Click the button and try again."
     } else {
-        var list = createArray(numArray);
+        var list = createpArray(numArray);
     }
 
     var paramSort = sort(list);
@@ -76,6 +76,37 @@ function paramArray() {
  document.getElementById("paramOutput").innerHTML = "Here is your array: " + "[" + paramSort + "]";
  document.getElementById("rangeOutput").innerHTML = "Here is the range of your array: " + paramRange;
 
+}
+
+function sort(list) {
+    var firstValue = 0;
+     var lastValue = list.length - 1;
+    for (var i = lastValue - 1;  i >= firstValue;  i--) {
+         var swap = list[i];
+    for (var j = i + 1;  j <= lastValue;  j++) {
+    if (swap <= list[j]) {
+        break;
+        }
+    list[j - 1] = list[j];
+        }
+    list[j - 1] = swap;
+    }
+}
+
+function createpArray (txtArray) {
+    var i = 0;
+    var list = [];
+    do {
+    var txtArray = parseFloat(prompt("Enter the number of your array."));
+    if (isNaN(txtArray)) {
+        break;
+    } else {
+        list.push(txtArray);
+        i++;
+    }
+}
+    while (i < txtArray);
+    return list;
 }
 
 function range(list) {
