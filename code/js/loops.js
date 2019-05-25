@@ -61,64 +61,52 @@ function infoArray() {
 
 // Parameters and Arrays
 
-
 function paramArray() {
+    var txtArray = parseInt(prompt("Input the amount of numbers you want in your array."));
 
-    var textArray = parseInt(prompt("Input the amount of numbers you want in your array!"));
-    if (isNaN(textArray)) {
-    document.getElementById("arrayOutput").innerHTML = "Error with your input. Please try again"
+    if (isNaN(txtArray)) {
+        document.getElementById("paramOutput").innerHTML = "Click the button and try again."
     } else {
-      var list = createArray(textArray);
+        var list = createpArray(txtArray);
     }
-     
-    var sortArray = sort(list);
+
+    var paramSort = sort(list);
     var paramRange = range(list);
-    
-    document.getElementById("arrayOutput").innerHTML = "Array of values: " + "[" + list + "]";
-    document.getElementById("rangeOutput").innerHTML = "Here is the range of your array: " + paramRange;
+
+ document.getElementById("paramOutput").innerHTML = "Here is your array: " + "[" + paramSort + "]";
+ document.getElementById("rangeOutput").innerHTML = "Here is the range of your array: " + paramRange;
+
 }
 
- 
-function sort(list) {
-    var firstValue = 0;
-    var lastValue = list.length - 1;
-    for (var i = lastValue - 1;  i >= firstValue;  i--) {
-    var swap = list[i];
-    for (var j = i + 1;  j <= lastValue;  j++) {
-    if (swap <= list[j]) {
-        break;
-                 }
-                 list[j - 1] = list[j];
-             }
-             list[j - 1] = swap;
-         }
-}
-
-function createArray (textArray) {
-     
+function createpArray(txtArray) {
     var i = 0;
     var list = [];
     do {
-    var txtArray = parseFloat(prompt("Enter Integer Value"));
-   if (isNaN(txtArray)) {
-        break;
-    } else {
-                
-    list.push(txtArray);
-    i++;
-        }
-    }
-    while (i < textArray);
+        var textArray = parseFloat(prompt("Enter the number of your array."));
+        if (isNaN(textArray)) {
+            break;
+        } else {
+            list.push(textArray);
+            i++;
+         }
+    } while (i < txtArray);
     return list;
 }
-function range(list) {
-        var firstValue = list[0];
-        var lastValue = list[list.length - 1];
-        var paramRange = lastValue - firstValue;
-    
-        return paramRange;
-}
-    
 
+function sort(list) {
+    var firstValue = 0;
+    var lastValue = list.length - 1;
+        for (var i = lastValue - 1;  i >= firstValue;  i--) {
+            var swap = list[i];
+            for (var j = i + 1;  j <= lastValue;  j++) {
+                if (swap <= list[j]) {
+                    break;
+                }
+                list[j - 1] = list[j];
+        }
+        list[j - 1] = swap;
+    }
+    return list;
+}
 
 
