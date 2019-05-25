@@ -64,14 +64,14 @@ function infoArray() {
 
 function paramArray() {
 
-     var textArrayMax = parseInt(prompt("How many numbers will you enter?"));
+     var txtArray = parseInt(prompt("Input the amount of numbers you want in your array!"));
      
-     if (isNaN(textArrayMax)) {
+     if (isNaN(txtArray)) {
 
          document.getElementById("arrayOutput").innerHTML = "Error with your input. Please try again"
      } else {
       
-         var list = createArray(textArrayMax);
+         var list = createArray(txtArray);
      }
      
      var sortArray = sort(list);
@@ -83,7 +83,7 @@ function paramArray() {
 
      }
 
-     // Function to sort integers
+ 
      function sort(list) {
          var firstValue = 0;
          var lastValue = list.length - 1;
@@ -99,30 +99,35 @@ function paramArray() {
          }
      }
 
-     // Function to create an array
-     function createArray (textArrayMax) {
-         //Define interval variable
+  
+     function createArray (txtArray) {
+     
          var i = 0;
-         //Define place holder array
+       
          var list = [];
-         //Do while loop to capture integer values from user	
          do {
-             //Prompt user for integers for array
-             var textInputArray = parseFloat(prompt("Enter Integer Value"));
-             //Determine input value is an integer, break out of loop if invalid input 
-             if (isNaN(textInputArray)) {
+            
+             var txtArray = parseFloat(prompt("Enter Integer Value"));
+   
+             if (isNaN(txtArray)) {
                  break;
              } else {
-                 //add integer into array
-                 list.push(textInputArray);
+                
+                 list.push(txtArray);
                  i++;
              }
          }
-         //Loop through until array length is reached
-         while (i < textArrayMax);
+         while (i < txtArray);
          return list;
      }
-
+     function range(list) {
+        var firstValue = list[0];
+        var lastValue = list[list.length - 1];
+        var paramRange = lastValue - firstValue;
+    
+        return paramRange;
+    }
+    
 
 // function paramArray() {
 //     var txtArray = parseInt(prompt("Input the amount of numbers you want in your array!"));
@@ -172,11 +177,4 @@ function paramArray() {
 //     return list;
 // }
 
-function range(list) {
-	var firstValue = list[0];
-	var lastValue = list[list.length - 1];
-	var paramRange = lastValue - firstValue;
-
-	return paramRange;
-}
 
