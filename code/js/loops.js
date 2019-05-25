@@ -73,7 +73,7 @@ function paramArray() {
     var paramSort = sort(list);
     var paramRange = range(list);
 
- document.getElementById("paramOutput").innerHTML = "Here is your array: " + "[" + paramSort + "]";
+ document.getElementById("paramOutput").innerHTML = "Here is your array: " + "[" + list + "]";
  document.getElementById("rangeOutput").innerHTML = "Here is the range of your array: " + paramRange;
 
 }
@@ -108,5 +108,11 @@ function sort(list) {
     }
     return list;
 }
+function range(list) {
+    var firstValue = list[0];
+    var lastValue = list[list.length - 1];
+    var paramRange = lastValue - firstValue;
 
+    return paramRange;
+}
 
