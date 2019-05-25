@@ -65,13 +65,13 @@ function paramArray() {
     var numArray = parseInt(prompt("Enter the number of your array!"));
 
     if (isNaN(numArray)) {
-        document.getElementById("paramOutputt").innerHTML = "Click the button and try again."
+        document.getElementById("paramOutput").innerHTML = "Click the button and try again."
     } else {
-        var input = paramCreated(numArray);
+        var list = paramCreated(txtArray);
     }
 
-    var paramSort = sort(input);
-    var paramRange = Range(input);
+    var paramSort = sort(list);
+    var paramRange = Range(list);
  document.getElementById("arrayOutput").innerHTML = "Here is your array: " + "[" + paramSort + "]";
  document.getElementById("rangeOutput").innerHTML = "Here is the range of your array: " + paramRange;
 
