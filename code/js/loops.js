@@ -67,7 +67,7 @@ function paramArray() {
     if (isNaN(numArray)) {
         document.getElementById("paramOutput").innerHTML = "Click the button and try again."
     } else {
-        var list = paramCreated(numArray);
+        var list = createArray(numArray);
     }
 
     var paramSort = sort(list);
