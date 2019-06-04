@@ -77,3 +77,23 @@ cursor: pointer;
     margin: 4px 2px;
     cursor: pointer;
 }
+
+hr.loophr1 {
+    border: 10px solid rgb(49, 75, 190);
+    border-radius: 5px;
+  }
+
+hr.loophr2 {
+    border: 10px solid rgb(49, 75, 190);
+    border-radius: 5px;
+  }
+
+hr.loophr3 {
+    border: 10px solid rgb(49, 75, 190);
+    border-radius: 5px;
+  }
+
+hr.loophr4 {
+    border: 10px solid rgb(49, 75, 190);
+    border-radius: 5px;
+  }
