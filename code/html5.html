@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8>
+		<meta name="description" content="HTML5 Tags">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" href="css/html5.css">
+		<title>JavaScript Objects</title>
+	</head>
+
+	<body>
+		<main>
+            <h1>HTML5 Tags | Video, Audio, and Canvas</h1>
+
+            <hr class="htmlhr1">
+
+            <h2>Video</h2>
+            <p>Here is a short video I took of the leaves on a tree.</p>
+            <div class="center">
+            <video width="427" height="240" controls autoplay loop muted>
+                <source src="html5files/video.MP4" type="video/mp4">
+                HTML5 video is not supported by your browser.
+            </video>
+            </div>
+            <hr class="htmlhr2">
+
+            <h2>Audio</h2>
+            <p>Here is an audio of a student interview we did for one of my classes.</p>
+            <div class="center">
+            <audio src="html5files/studentinterview.m4a" controls autoplay loop muted>
+                HTML5 audio is not supported by your browser.
+            </audio>
+            </div>
+            <hr class="htmlhr3">
+
+            <h2>Canvas</h2>
+            <div class="center">
+            <img id="dandelion" src="html5files/dandelion.jpg" alt="The Dandelion" width="250" height="330">
+
+            <p>Fill the canvas with the above image:</p>
+            <canvas id="fillCanvas" width="250" height="300"
+            style="border:3px solid #017026;">
+            Your browser does not support the HTML5 canvas tag.</canvas>
+
+            </div>
+
+            <p><button class="htmlbutton" type="button" onclick="fillCanvas()">Fill Me</button></p>
+
+            <script>
+            function fillCanvas() {
+            var c = document.getElementById("fillCanvas");
+            var ctx = c.getContext("2d");
+            var img = document.getElementById("dandelion");
+            ctx.drawImage(img, 10, 5, 230, 300);
+            }
+            </script>
+            
+
+		</main>
+	</body>
+</html>
