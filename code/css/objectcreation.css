@@ -1,0 +1,98 @@
+header,
+main,
+footer {
+margin: 0 auto;
+padding: .5rem;
+max-width: 1000px;
+}
+
+
+body {
+background-image: url("/code/levelitup/strawberry.gif");
+background-repeat: no-repeat;
+}
+
+
+h1 {
+background-color: rgb(241, 177, 215);
+}
+
+h2 {
+background-color: rgb(247, 224, 238);
+}
+
+hr.objecthr1 {
+border: 5px solid rgb(137, 255, 186);
+border-radius: 5px;
+}
+
+hr.objecthr2 {
+  border: 5px solid rgb(137, 255, 186);
+  border-radius: 5px;
+  }
+
+input.placeholder1 {
+width: 250px;
+background-color: rgb(137, 255, 186);
+border: 3px solid black;
+padding: 5px;
+font-family:courier;
+}
+
+input.placeholder2 {
+width: 250px;
+background-color: rgb(137, 255, 186);
+border: 3px solid black;
+padding: 5px;
+font-family:courier;
+}
+
+input.placeholder3 {
+width: 250px;
+background-color: rgb(137, 255, 186);
+border: 3px solid black;
+padding: 5px;
+font-family:courier;
+}
+
+input.placeholder4 {
+width: 250px;
+background-color: rgb(137, 255, 186);
+border: 3px solid black;
+padding: 5px;
+margin-top: 5px;
+font-family:courier;
+}
+
+input.placeholder5 {
+width: 250px;
+background-color: rgb(137, 255, 186);
+border: 3px solid black;
+padding: 5px;
+margin-top: 5px;
+font-family:courier;
+}
+
+.buttonStory {
+background-color: rgb(255, 83, 178);
+border-radius: 50%;
+border: none;
+color: black;
+padding: 8px 15px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 10px 450px;
+cursor: pointer;
+margin-top: 30px;
+font-family:courier;
+}
+
+p {
+	color: black;
+  font-size: 20px;
+  font-family:courier;
+  background-color: rgb(241, 177, 215);
+  font-weight: bold;
+}

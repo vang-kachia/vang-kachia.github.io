@@ -7,23 +7,80 @@
 		<link rel="stylesheet" type="text/css" href="css/objectcreation.css">
 		<script src="js/objectcreation.js"></script>
 		<title>JavaScript Objects</title>
+		<script>
+		function finishStory() {
+
+		var city = "Los Angeles";
+		var gName = "Kachia";
+		var bName = "Aaron";
+		var number = "30";
+		var adjective = "delicious";
+	
+		
+		if (document.getElementById("city").value != "") {
+			var city = document.getElementById("city").value;
+			}
+		
+		if (document.getElementById("gName").value != "") {
+			var gName = document.getElementById("gName").value;
+			}
+			
+		if (document.getElementById("bName").value != "") {
+			var bName = document.getElementById("bName").value;
+			}	
+		
+		if (document.getElementById("number").value != "") {
+			var number = document.getElementById("number").value;
+			}
+		
+		if (document.getElementById("adjective").value != "") {
+			var adjective = document.getElementById("adjective").value;
+			}		
+		
+		//Create a new object containing all of the inputs
+		var userInputs = new theInput(city, gName, bName, number, adjective);
+		
+	   var story = " It was a hot summer in " + userInputs.city + ". " + userInputs.gName + " decided to call up " + userInputs.bName +
+		". " + " They went to the strawberry patch. " + " Together, they picked up " + userInputs.number + " strawberries. " +
+		" It tasted so " + userInputs.adjective + "! ";
+		
+		document.getElementById("myStory").innerHTML = story;
+		
+		//moves viewport to the bottom of the page
+		// window.scrollTo(0,document.body.scrollHeight);
+		
+		}
+		
+	 	function theInput(city, gName, bName, number, adjective) {
+	 	this.city = city;
+	 	this.gName = gName;
+	 	this.bName = bName;
+	 	this.number = number;
+	 	this.adjective = adjective;
+	 	}
+	
+	 </script>
 	</head>
 
 	<body>
 		<main>
-            <h1>JavaScript Objects</h1>
-            <h2>Object Creation Functions, Inheritance, Properties, Methods, Instantiation.</h2>
-            
+			<h1 style="font-family:courier;">JavaScript Objects</h1>
+            <h2 style="font-family:courier;">Object Creation Functions, Inheritance, Properties, Methods, Instantiation</h2>
+			
+			<hr class="objecthr1">
 
+			<h2 style="font-family:courier;">Please fill in the blanks below to complete my story.</h2>
 
+			<input type="text" id="city" placeholder="City" class="placeholder1">
+			<input type="text" id="gName" placeholder="Girl's Name" class="placeholder2">
+			<input type="text" id="bName" placeholder="Boy's Name" class="placeholder3">
+			<input type="text" id="number" placeholder="Number" class="placeholder4">
+			<input type="text" id="adjective" placeholder="Adjective to Describe Food" class="placeholder5">
+			<button class="buttonStory" onclick="finishStory()">Finish the Story!</button>
+			<p id="myStory"></p>
 
-
-
-
-
-
-
-
-		</main>
+			<hr class="objecthr2">
+			
+			</main>
 	</body>
 </html>
