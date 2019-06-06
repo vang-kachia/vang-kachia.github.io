@@ -1,0 +1,37 @@
+[
+	{
+        "animal": "Snake",
+        "name": "Sebastian",
+        "food": "Flesh",
+        "activity": "Slither",
+        "location": "Anywhere"
+	},
+	{
+        "animal": "Warthog",
+        "name": "Pumbaa",
+        "food": "Berries",
+        "activity": "Running",
+        "location": "Africa"
+	},
+	{
+        "animal": "Deer",
+        "name": "Bambi",
+        "food": "Acorns",
+        "activity": "Sleep",
+        "location": "North America"
+	},
+	{
+        "animal": "Meerkat",
+        "name": "Timon",
+        "food": "Bugs",
+        "activity": "Dig",
+        "location": "South Africas"
+    },
+    {
+        "animal": "Penguin",
+        "name": "Mumble",
+        "food": "Squid",
+        "activity": "Hunt",
+        "location": "Antarctica"
+    }
+]

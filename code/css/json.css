@@ -1,0 +1,47 @@
+header,
+main,
+footer {
+margin: 0 auto;
+padding: .5rem;
+max-width: 1000px;
+}
+
+
+main {
+background: rgb(236, 245, 106);
+}
+ 
+body {
+    background-image: url("/code/levelitup/pawprint.gif");
+    }
+    
+
+hr.jsonhr1 {
+border: 10px solid rgb(238, 96, 31);
+border-radius: 5px;
+}
+
+.jsonButton {
+background-color: rgb(2, 2, 2);
+border-radius: 20px;
+color: white;
+padding: 14px 40px;
+text-align: center;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
+font-family:Lucida Console;
+}
+
+.stringButton {
+background-color: rgb(2, 2, 2);
+border-radius: 20px;
+color: white;
+padding: 14px 40px;
+text-align: center;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
+font-family:Lucida Console;
+}
+

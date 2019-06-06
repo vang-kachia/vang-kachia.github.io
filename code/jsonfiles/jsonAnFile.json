@@ -1,0 +1,37 @@
+[
+	{
+        "animal": "Lion",
+        "name": "Mufasa",
+        "food": "Antelopes",
+        "activity": "Hunt",
+        "location": "Africa"
+	},
+	{
+        "animal": "Elephant",
+        "name": "Dumbo",
+        "food": "Peanuts",
+        "activity": "Baths",
+        "location": "China"
+	},
+	{
+        "animal": "Giraffe",
+        "name": "Melman",
+        "food": "Leaves",
+        "activity": "Sretch",
+        "location": "Madagascar"
+	},
+	{
+        "animal": "Brown Bear",
+        "name": "Kenai",
+        "food": "Salmon",
+        "activity": "Eat",
+        "location": "Alaska"
+    },
+    {
+        "animal": "Hippo",
+        "name": "Gloria",
+        "food": "Grass",
+        "activity": "Sleep",
+        "location": "Africa"
+    }
+]

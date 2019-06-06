@@ -4,14 +4,26 @@
 		<meta charset=utf-8>
 		<meta name="description" content="JSON">
 		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" type="text/css" href="css/">
+		<link rel="stylesheet" type="text/css" href="css/json.css">
+		<script type="text/javascript" src="jsonfiles/jsonAnFile.json"></script>
+		<script type="text/javascript" src="jsonfiles/jsonAnFile2.json"></script>
+		<script type="text/javascript" src="/code/js/json.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
 		<title>JSON</title>
 	</head>
 
 	<body>
 		<main>
-            <h1 style="font-family:Garamonds;">JSON Parse, Stringify</h1>
+            <h1 style="font-family: 'Cinzel', serif;">JSON Parse, Stringify</h1>
+            <h2 style="font-family:Lucida Console;">The Animal Kingdom</h2>
+            <hr class="jsonhr1">
 
+            <p style="font-family:Lucida Console;"><b>Click on the button to look at the JSON file and its string output.</b></p>
+			<button type="button" onclick="jsonBig()" class="jsonButton">Inspect Big Animal JSON file</button>
+			<button type="button" onclick="jsonSmall()" class="stringButton">Inspect Small Animal JSON file</button>
+
+			<div id="jsonAnOutput"></div>
+			<div id="jsonStringAnOutput"></div>
 
 
         
