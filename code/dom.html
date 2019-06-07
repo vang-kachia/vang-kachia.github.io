@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8>
+		<meta name="description" content="HTML5 Tags">
+		<meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/dom.css">
+        <script type="text/javascript" src="/code/js/dom.js"></script>
+		<title>DOM</title>
+	</head>
+
+	<body>
+		<main>
+                <div class="wrapper">
+                <h1 style="font-family: 'Inconsolata', monospace;">D | O | M</h1>
+                <hr class="domhr">
+                  
+                <div class="dom manipulation" id="parent1">
+                <h2 style="font-family: 'Inconsolata', monospace;">Create Element</h2>
+                <div id="dId1"></div>
+                <button type="button" onclick="create()" class="domB1">The rain is</button>
+                 
+                <hr class="domhr">
+
+                <h2 style="font-family: 'Inconsolata', monospace;">Append Child</h2>
+                <p id="pId1" style="font-family: 'Inconsolata', monospace;"><b>Drip or Drop? </b></p>
+                <br>
+                <button type="button" onclick="addTextNode('Drip ');" class="domB2">Drip</button>
+                <button type="button" onclick="addTextNode('Drop ');" class="domB3">Drop</button>
+
+                <hr class="domhr">
+
+                <h2 style="font-family: 'Inconsolata', monospace;">Insert Before</h2>
+                <ul style="font-family: 'Inconsolata', monospace; list-style-type:none;" id="rainItems">
+                    <li>Umbrella</li>
+                    <li>Rain Coat</li>
+                    <li>Boots</li>
+                </ul>
+                <button type="button" onclick="insert()" class="domB4">Add the Missing Item</button>
+
+                <hr class="domhr">
+
+                <h2 style="font-family: 'Inconsolata', monospace;">Remove Child</h2>
+                <br>
+                <button type="button" onclick="remove()" class="domB5">Remove Child</button> 
+            </main>
+        </body>
+    </html>
