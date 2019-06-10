@@ -1,0 +1,104 @@
+header,
+main,
+div,
+footer {
+margin: 0 auto;
+padding: .5rem;
+max-width: 1000px;
+}
+
+
+body {
+background-image: url("/code/levelitup/candy.gif");
+
+}
+
+main,
+div {
+background: rgb(187, 114, 255);
+text-align: center;
+color: white;
+}
+
+hr.manipulatehr {
+border: 10px solid rgb(22, 255, 255);
+border-radius: 5px;
+}
+
+.manB1 {
+background-color: rgb(208, 211, 17);
+border-radius: 20px;
+color: white;
+padding: 14px 40px;
+text-align: center;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
+font-family:Lucida Console;
+}
+
+.manB2 {
+background-color: rgb(255, 52, 130);
+border-radius: 20px;
+color: white;
+padding: 14px 40px;
+text-align: center;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
+font-family:Lucida Console;
+} 
+/* 
+.manB3 {
+background-color: rgb(52, 72, 255);
+border-radius: 20px;
+color: white;
+padding: 14px 40px;
+text-align: center;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
+font-family:Lucida Console;
+}  */
+
+.manB4 {
+background-color: rgb(69, 255, 52);
+border-radius: 20px;
+color: white;
+padding: 14px 40px;
+text-align: center;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
+font-family:Lucida Console;
+} 
+
+.dropdown {
+    position: relative;
+    /* use to be static */
+    display: inline; 
+    /* use to be inline  */
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #d7b5d8;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #89c58c}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+

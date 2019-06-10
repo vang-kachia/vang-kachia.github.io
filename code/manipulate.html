@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8>
+		<meta name="description" content="HTML5 Tags">
+		<meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/manipulate.css">
+        <link href="https://fonts.googleapis.com/css?family=Emilys+Candy&display=swap" rel="stylesheet">
+		<title>Manipulate CSS</title>
+	</head>
+
+	<body>
+		<main>
+            <h1 style="font-family: 'Emilys Candy', cursive;">Manipulating CSS Class Properties Using JavaScript</h1>
+           
+            <hr class="manipulatehr">
+
+            <h2 style="font-family: 'Emilys Candy', cursive;">Hoover the buttons below to play with this sentence:</h2>
+            <h3 id="sentence" style="text-align:center">My favorite candies are: twix, sour gummy worms, and jawbreakers.</h3>
+            
+            <div class="dropdown" margin-bottom="600px">
+            <button type="button" class="manB1">Size it up..or down</button>
+            <div class="dropdown-content">
+            <a href="#" onclick="smallText()">Small</a>
+            <a href="#" onclick="mediumText()">Medium</a>
+            <a href="#" onclick="largeText()">Large</a>
+            </div>
+            <div class="dropdown">
+            <button type="button" class="manB2">Change the Color</button>
+            <div class="dropdown-content">
+            <a href="#" onclick="greenText()">Green</a>
+            <a href="#" onclick="orangeText()">Orange</a>
+            <a href="#" onclick="blackText()">Black</a>
+            </div>
+           
+
+            <hr class="manipulatehr">
+
+            <h2 style="font-family: 'Emilys Candy', cursive;">Picture Perfect</h2>
+
+            <img id="sweets" src="levelitup/sweets.jpg" alt="Sweets" width="450" height="330">
+            <div id="picSlideContainer">
+            <br>
+            <input type="range" value="50" min="1" max="100" id="picWidth"
+            oninput="adjustPercentage(this.value)" onchange="adjustPercentage(this.value)">
+            <span id="picSliderOutput"></span>
+            <button type="button" onclick="adjustPicture()" class="manB4">Let's Adjust</button>
+            </div>
+
+
+
+            <script>
+            function smallText() {document.getElementById("sentence").style.fontSize = "small";}
+            function mediumText() {document.getElementById("sentence").style.fontSize = "medium";}
+            function largeText() {document.getElementById("sentence").style.fontSize = "x-large";}  
+            function greenText() {document.getElementById("sentence").style.color = "green";}
+            function orangeText() {document.getElementById("sentence").style.color = "orange";}
+            function blackText() {document.getElementById("sentence").style.color = "black";}
+            
+            function adjustPicture() {
+            var picWidth = document.getElementById("picWidth").value;
+            document.getElementById("sweets").style.width = picWidth + '%'; 
+            }
+            function adjustPercentage(percentage) {
+            document.getElementById("picSliderOutput").innerHTML = percentage + '%';
+            }
+            function adjustPixels(pixels) {
+            document.getElementById("textSliderOutput").innerHTML = pixels + ' px';
+            }
+            </script>
+ 
+            </main>
+        </body>
+    </html>
