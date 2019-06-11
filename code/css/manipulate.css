@@ -74,31 +74,31 @@ font-family:Lucida Console;
 } 
 
 .dropdown {
-    position: relative;
-    /* use to be static */
-    display: inline; 
-    /* use to be inline  */
+position: relative;
+/* use to be static */
+display: inline; 
+/* use to be inline  */
 }
 
 .dropdown-content {
-    display: none;
-    position: relative;
-    background-color: #d7b5d8;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+display: none;
+position: relative;
+background-color: #d7b5d8;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
 }
 
 .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
 }
 
 .dropdown-content a:hover {background-color: #89c58c}
 
 .dropdown:hover .dropdown-content {
-    display: block;
+display: block;
 }
 

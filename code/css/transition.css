@@ -1,0 +1,131 @@
+header,
+main,
+footer {
+margin: 0 auto;
+padding: .5rem;
+max-width: 1000px;
+}
+
+
+body {
+background-image: url("/code/levelitup/rainbow.png");
+background-repeat: no-repeat;
+background-size: 100% 150%;
+}
+
+main {
+background: rgb(123, 182, 100);
+text-align: center;
+}
+
+hr.transitionhr {
+border: 5px solid rgb(0, 0, 0);
+border-radius: 5px;
+}
+
+#transition1 {
+width: 500px;
+height: 50px;
+background-color: black;
+margin: 0px;
+}
+
+
+#box1 {
+width: 50px;
+height: 50px;
+background-color: rgb(238, 0, 0);
+transition: 2s steps(10) 0s;	
+}
+
+#box1:hover {
+width: 500px;
+background-color: rgb(255, 94, 0);
+}
+
+#box2 {
+width: 50px;
+height: 50px;
+background-color: rgb(251, 255, 0);
+transition: 1s ease-in-out 0s;	
+}
+
+#box2:hover {
+width: 500px;
+background-color: rgb(3, 206, 3);
+}
+
+#box3 {
+width: 50px;
+height: 50px;
+background-color: rgb(17, 0, 255);
+transition: 3s linear 0s;	
+}
+
+#box3:hover {
+width: 500px;
+background-color: rgb(140, 0, 255);
+}
+
+
+input[type=text].click1 
+{
+width: 100px;
+height: 20px;
+padding: 5px 10px;
+margin-top: 15px;
+color: black;
+font-size: 12px;
+border-radius: 15px;
+border: none;
+transition: all ease-in-out .5s;
+}
+
+input[type=text]#orange
+{
+background: orangered;
+transition-timing-function: linear;
+}
+
+input[type=text]#green
+{
+background: rgb(0, 190, 0);
+transition-timing-function: ease;
+}
+        
+input[type=text]#purple
+{
+background: rgb(196, 0, 245);
+transition-timing-function: ease-in;
+}
+    
+input[type=text].click1:focus 
+{
+width: 165px; 
+outline: none;  
+background: #fff;
+border:1px solid #000;
+}
+
+input[type=text]#orange:focus
+{
+color:#000000;
+background: rgb(226, 98, 120);
+height: 50px;
+transform: skewY(-8deg);
+}
+
+input[type=text]#green:focus
+{
+color:#000000;
+background:rgb(104, 200, 255);
+width: 360px;
+height: 65px;
+}
+
+input[type=text]#purple:focus
+{
+color:#000000;
+background: rgb(255, 253, 152);
+transform: rotate(360deg);
+}
