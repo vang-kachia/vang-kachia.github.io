@@ -9,9 +9,27 @@ max-width: 1000px;
 
 body {
 font-family: 'Cinzel', serif;
+background-image: url("/code/levelitup/flower.gif");
+background-repeat: no-repeat;
+background-size: 100% 150%;
+
 }
 
 main {
-    background: rgb(255, 185, 212);
+    background: rgb(253, 194, 217);
     font-family: 'Cinzel', serif;
     }
+
+    ul.a {
+        list-style-position: outside;
+      }
+
+    ul {
+        background: #cccccc;
+        padding: 20px;
+      }
+
+    ul li {
+        background: #cccccc;
+        margin: 5px;
+      }
