@@ -1,0 +1,167 @@
+header,
+main,
+footer {
+margin: 0 auto;
+padding: .5rem;
+max-width: 1000px;
+}
+
+
+body {
+background-image: url("/code/levelitup/flowertransform.gif");
+}
+
+main {
+background: rgb(255, 196, 218);
+text-align: center;
+}
+
+h4 {
+    color: rgb(255, 196, 218);
+}
+
+
+hr.transformhr {
+border: 10px solid rgb(201, 147, 147);
+border-radius: 5px;
+}
+
+
+.transform1 {
+width:60%;
+}
+  
+.transform1:hover > div {
+transform: translate(750px,20px) scale(2) rotate(270deg);
+border-radius: 0%;
+}
+  
+.t1 {
+width: 3em;
+height: 3em;
+border-radius: 50%;
+transition-property: all;
+transition-duration: 2s;
+}
+
+.t2 {
+width: 1em;
+height: 5em;
+border-radius: 50%;
+transition-property: all;
+transition-duration: 3s;
+}
+
+.t3 {
+width: 4em;
+height: 2em;
+border-radius: 50%;
+transition-property: all;
+transition-duration: 5s;
+}
+
+.t4 {
+width: 4em;
+height: 4em;
+border-radius: 50%;
+transition-property: all;
+transition-duration: 2s;
+}
+
+.t5 {
+width: 1em;
+height: 1em;
+border-radius: 10%;
+transition-property: all;
+transition-duration: 4s;
+}
+  
+.t1:hover, .t2:hover, .t3:hover, .t4:hover, .t5:hover {
+border-radius: 0%;
+}
+  
+.transform1:hover > .t1 {
+background-color: rgb(114, 0, 44);
+}
+  
+.transform1:hover > .t2 {
+background-color: rgb(189, 0, 94);
+}
+  
+.transform1:hover > .t3 {
+background-color: rgb(253, 36, 137);
+}
+  
+.transform1:hover > .t4 {
+background-color: rgb(241, 93, 155);
+}
+  
+.transform1:hover > .t5 {
+background-color: rgb(231, 178, 198);
+}
+.carousel {
+position: absolute;
+top: 50%;
+left: 50%;
+width: 200px;
+height: 210px;
+margin: 0;
+perspective: 800px;
+transform: translate(-50%, -50%);
+}
+
+.cf {
+position: absolute;
+width: 100%;
+height: 100%;
+transform-style: preserve-3d;
+transform: translateZ(-300px) rotateY(0);
+animation: carousel 15s infinite cubic-bezier(1, 0.115, 0.295, 1) forwards;
+}
+
+.ci {
+position: absolute;
+top: 500px;
+left: 0;
+width: 155px;
+height: 254px;
+}
+
+.ci:nth-child(1) {
+background-image: url("/code/levelitup/c1.gif");
+transform: rotateY(0) translateZ(300px);
+}
+
+.ci:nth-child(2) {
+background-image: url("/code/levelitup/c2.gif");
+transform: rotateY(100deg) translateZ(300px);
+}
+
+.ci:nth-child(3) {
+background-image: url("/code/levelitup/c3.gif");
+transform: rotateY(200deg) translateZ(300px);
+}
+
+@keyframes
+carousel {  0% {
+ transform: translateZ(-300px) rotateY(0);
+}
+20% {
+transform: translateZ(-300px) rotateY(-72deg);
+}
+40% {
+transform: translateZ(-300px) rotateY(-144deg);
+}
+60% {
+transform: translateZ(-300px) rotateY(-216deg);
+}
+80% {
+transform: translateZ(-300px) rotateY(-288deg);
+}
+100% {
+transform: translateZ(-300px) rotateY(-360deg);
+}
+}
+
+
+  
