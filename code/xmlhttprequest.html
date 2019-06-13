@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8>
+		<meta name="description" content="XMLHTTP Request">
+		<meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/xmlhttp.css">
+        <link href="https://fonts.googleapis.com/css?family=Nova+Mono&display=swap" rel="stylesheet">
+        <script src="js/xml.js"></script>
+      
+		<title>XMLHTTP Request</title>
+	</head>
+
+	<body>
+		<main>
+                <h1 style="font-family: 'Nova Mono', monospace;"><b>XMLHTTP Request to Consume a JSON Web Service</b></h1>
+               
+                <hr class="xmlhttphr">
+
+                <h2 style="font-family: 'Nova Mono', monospace;">Type in a country to see more information about it!</h2>
+                <h3 style="font-family: 'Nova Mono', monospace;">After your input, click the button TWICE.</h3>
+                <label style="font-family: 'Nova Mono', monospace;" for="fname">Country:</label> 
+                <input type="text" id="country" class="box" style="font-family: 'Nova Mono', monospace;">
+                <button type="button" onclick="countryInfo()" class="xmlButton">Find Country Info 🠚</button>
+                    
+                <p id="capital"style="font-family: 'Nova Mono', monospace;"><br></p>
+                <p id="continent"style="font-family: 'Nova Mono', monospace;"><br></p>
+                <p id="longitude"style="font-family: 'Nova Mono', monospace;"><br></p>
+                <p id="latitude"style="font-family: 'Nova Mono', monospace;"><br></p>
+                <p id="code"style="font-family: 'Nova Mono', monospace;"><br></p>
+                   
+                <hr class="xmlhttphr">
+            
+            </main>
+    </body>
+</html>
