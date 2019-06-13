@@ -79,24 +79,22 @@ to {top: 200px;}
 }
 
 h2 {
-    margin: 0;
-    padding:0;
-    position: absolute;
-    top: 86%;
-    left: 20%;
-    transform: translateY(-10%);
-   
-   
-    color: white;
-    font-size: 5em;
-    letter-spacing: 0.3em;
+margin: 0;
+padding:0;
+position: absolute;
+top: 83%;
+left: 20%;
+transform: translateY(-10%);
+color: white;
+font-size: 5em;
+letter-spacing: 0.3em;
 }
 
 h2 span {
-    opacity: 0;
-    display: inline-block;
-    animation: animate 2s linear forwards;
-    animation-iteration-count: infinite;
+opacity: 0;
+display: inline-block;
+animation: animate 2s linear forwards;
+animation-iteration-count: infinite;
 }
 
 @keyframes animate
@@ -121,8 +119,8 @@ content: '';
 position: absolute;
 top: 60;
 left: 10;
-width: 77.5%;
-height: 15.5%;
+width: 76.7%;
+height: 15%;
 background: linear-gradient(to right, rgb(142, 0, 170),rgb(247, 111, 229),rgb(255, 0, 128),rgb(13, 0, 192),rgb(143, 135, 255),#0ff);
 mix-blend-mode: color;
 pointer-events: none;
