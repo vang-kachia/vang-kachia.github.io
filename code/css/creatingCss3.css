@@ -1,0 +1,110 @@
+header,
+main,
+footer {
+margin: 0 auto;
+padding: .5rem;
+max-width: 1000px;
+}
+
+
+body {
+background-image: url("/code/levelitup/fruit.gif");
+}
+
+main {
+background: rgb(255, 147, 104);
+text-align: center;
+}
+
+hr.chr {
+border: 7px solid rgb(255, 230, 0);
+}
+
+.c1 {
+background-color: rgb(183, 2, 238);
+border-radius: 20px;
+color: black;
+padding: 14px 30px;
+margin-top: 40px;
+margin-bottom: 20px;
+text-align: center;
+display: inline-block;
+font-size: 13px;
+cursor: pointer;
+font-family: 'Share Tech Mono', monospace;
+} 
+
+.grapeCss {
+width: 100px;
+height: 100px;
+margin-left: 430px;
+background: url(/code/levelitup/grape.png);
+background-size: contain;
+transition: opacity 3s;
+}
+
+.c2 {
+background-color: rgb(40, 255, 11);
+border-radius: 20px;
+color: black;
+padding: 14px 30px;
+margin-top: 30px;
+margin-bottom: 20px;
+text-align: center;
+display: inline-block;
+font-size: 13px;
+cursor: pointer;
+font-family: 'Share Tech Mono', monospace;
+} 
+
+.pearCss {
+width: 100px;
+height: 100px;
+margin-left: 450px;
+background: url(/code/levelitup/pear.png);
+background-size: contain;
+position: relative;
+left: -5000px;
+}
+
+.blueberryCss {
+background: url(/code/levelitup/blueberry.png);
+width: 69px;
+height: 80px;
+margin-left: 450px;
+background-size: contain;
+}
+
+.c3 {
+background-color: rgb(34, 0, 230);
+border-radius: 20px;
+color: black;
+padding: 14px 30px;
+margin-top: 30px;
+margin-bottom: 20px;
+text-align: center;
+display: inline-block;
+font-size: 13px;
+cursor: pointer;
+font-family: 'Share Tech Mono', monospace;
+} 
+
+.slide {
+border: none; 
+opacity: 0; 
+position: absolute; 
+width: 130px;
+height: 130px;
+margin-left: -80px;
+-webkit-transition: opacity 2s linear;
+-moz-transition: opacity 2s linear;
+-o-transition: opacity 2s linear;
+transition: opacity 2s linear;
+}
+.visible {
+opacity: 1;
+}
+
+h3 {
+color: rgb(255, 147, 104);
+}
