@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8>
+		<meta name="description" content="JavaScript Events">
+		<meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/jsevent.css">
+        <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="/code/js/jsevent.js"></script>
+		<title>JavaScript Events</title>
+    </head>
+    <body>
+        <main>
+    
+        <h1 style="font-family: 'Coiny', cursive;"><b>🐾 JavaScript Events 🖍️</b></h1>
+        <h1 style="font-family: 'Coiny', cursive;"><b>Blue's Clues Special Edition</b></h1>
+      
+      <input style="width: 200px; height: 100px;" id="welcomeB" type="button" value="Blue says..."
+        onmouseover="colorMat()"/>
+            
+        <hr class="jshr">
+
+        <h2 style="font-family: 'Coiny', cursive;"><b>Blue's Notebook 📔</b></h2>
+        <div id="bnb">
+        <img id="notebook" src="/code/levelitup/notebook.png" alt="noteBook">
+        </div>
+        <button type="button" onclick="put()" class="j1">Put Away</button>
+        <button type="button" onclick="take()" class="j1">Take Out</button> 
+
+        <hr class="jshr">
+
+        <h2 style="font-family: 'Coiny', cursive;"><b>Blue's Favorite Color</b></h2>
+        <p style="font-family: 'Coiny', cursive;">Watch what you type in change to uppercase:</p>
+        <input type="text" id="bcolor" onkeyup="upperC()">
+
+        <hr class="jshr">
+      
+    		
+		</main>
+    </body>
+</html>

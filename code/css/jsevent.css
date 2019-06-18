@@ -1,0 +1,116 @@
+header,
+main,
+footer {
+margin: 0 auto;
+padding: .5rem;
+max-width: 1000px;
+}
+
+body {
+background-image: url("/code/levelitup/bluesclues.gif");
+/* background-repeat: no-repeat; */
+}
+
+main {
+background: rgb(153, 194, 233);
+text-align: center;
+}
+
+hr.jshr {
+border: 7px solid rgb(9, 11, 168);
+}
+
+#bnb {
+/* display:inline-block; */
+line-height:100px;
+animation-fill-mode: forwards;
+animation-duration: 4s;
+transition: all 4s;
+}
+
+@keyframes disappear {
+from {opacity: 1;}
+to {opacity: 0;}
+}
+
+@keyframes reappear {
+from {opacity: 0;}
+to {opacity: 1;}
+}
+
+#welcomeB {
+background-color: rgb(255, 255, 255);
+border-radius: 20px;
+color: black;
+padding: 14px 30px;
+margin-left: 10px;
+margin-bottom: 20px;
+text-align: center;
+display: inline-block;
+font-size: 15px;
+cursor: pointer;
+font-family: 'Coiny', cursive;
+} 
+
+.j1 {
+background-color: rgb(238, 2, 2);
+border-radius: 20px;
+color: black;
+padding: 14px 30px;
+/* margin-top: 40px; */
+margin-left: 50px;
+margin-bottom: 20px;
+text-align: center;
+display: inline-block;
+font-size: 13px;
+cursor: pointer;
+font-family: 'Coiny', cursive;
+} 
+
+#bcolor {
+background-color: rgb(255, 255, 255);
+border-radius: 20px;
+color: black;
+padding: 14px 20px;
+margin-left: 10px;
+margin-bottom: 20px;
+text-align: center;
+display: inline-block;
+font-size: 15px;
+cursor: pointer; 
+font-family: 'Coiny', cursive;
+}
+
+h1, h2{
+-webkit-animation: color-change 2s infinite;
+-moz-animation: color-change 2s infinite;
+-o-animation: color-change 2s infinite;
+-ms-animation: color-change 2s infinite;
+animation: color-change 2s infinite;
+}
+
+@-webkit-keyframes color-change {
+0% { color: black; }
+50% { color: blue; }
+100% { color: white; }
+}
+@-moz-keyframes color-change {
+0% { color: black; }
+50% { color: blue; }
+100% { color: white; }
+}
+@-ms-keyframes color-change {
+0% { color: black; }
+50% { color: blue; }
+100% { color: white; }
+}
+@-o-keyframes color-change {
+0% { color: black; }
+50% { color: blue; }
+100% { color: white; }
+}
+@keyframes color-change {
+0% { color: black; }
+50% { color: blue; }
+100% { color: white; }
+}
