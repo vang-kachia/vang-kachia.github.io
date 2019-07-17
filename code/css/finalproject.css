@@ -422,18 +422,19 @@ width: 50%;
       .container1:hover .overlay {
         height: 100%;
       }
-      
-      .text1 {
-        color: white;
-        font-size: 20px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        text-align: center;
-      }
+    
+.text1 {
+color: white;
+font-size: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+text-align: center;
+}
+
 #one {
     -webkit-transform: rotateY(150deg); /* Safari prior 9.0 */
   transform: rotateY(150deg); /* Standard syntax */
@@ -459,9 +460,88 @@ width: 50%;
       }
 
 
+.domB1 {
+background-color: rgb(53, 163, 95);
+border-radius: 20px;
+color: black;
+padding: 14px 40px;
+text-align: center;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
+font-family: 'Kanit', sans-serif;
+-webkit-transition-duration: 0.4s; /* Safari */
+transition-duration: 0.4s;
+text-decoration: none;
+overflow: hidden;
+cursor: pointer;
+}
+      
+.domB1:after {
+content: "";
+background: url(/code/levelitup/happyface.png);
+display: block;
+position: absolute;
+padding-top: 80%;
+padding-right: 60%;
+margin-right: 200px;
+margin-top: -100%;
+opacity: 0;
+transition: all 0.6s
+}
+      
+.domB1:active:after {
+padding: 0;
+margin: 0;
+opacity: 1;
+transition: 0s
+}
 
-     
-      .mySlides {display:none;}
+.domB2 {
+background-color: rgb(53, 163, 95);
+border-radius: 20px;
+color: black;
+padding: 14px 40px;
+text-align: center;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
+font-family: 'Kanit', sans-serif;
+box-shadow: 0 9px #999;
+}
+
+.domB2:hover {background-color: #3e8e41}
+
+.domB2:active {
+background-color: #3e8e41;
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
+            
+.domB3 {
+background-color: rgb(53, 163, 95);
+border-radius: 20px;
+color: black;
+padding: 14px 40px;
+text-align: center;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
+font-family: 'Kanit', sans-serif;
+box-shadow: 0 9px #999;
+}
+
+.domB3:hover {background-color: #3e8e41}
+
+.domB3:active {
+background-color: #3e8e41;
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
+            
+.mySlides {display:none;}
+
+
 
 
     

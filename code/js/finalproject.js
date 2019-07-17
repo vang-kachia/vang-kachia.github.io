@@ -14,3 +14,17 @@ document.getElementById("localStorageOutput").innerHTML = output.Name + " is bri
 }
 
 
+function create() {
+var newh3 = document.createElement("h3");
+var newfall = document.createTextNode("I AM.");
+newh3.appendChild(newfall);
+var parent = document.getElementById("parent1");
+var div = document.getElementById("dId1");
+parent.insertBefore(newh3, div);
+}
+
+function addTextNode(text) {
+var addText = document.createTextNode(text),
+pId1 = document.getElementById("pId1");
+pId1.appendChild(addText);
+}
