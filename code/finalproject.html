@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8>
+		<meta name="description" content="Final Project">
+		<meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/finalproject.css">
+        <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="/code/js/finalproject.js"></script>
+		<title>Final Project</title>
+    </head>
+    <body>
+        <main>
+            <section>
+                <video src="levelitup/smokev.mp4" autoplay muted id="myVideo" ></video>
+                <h1 style="font-family: 'Kanit', sans-serif;">
+                    <span>C</span>
+                    <span>A</span>
+                    <span>M</span>
+                    <span>P</span>
+                    <span>I</span>
+                    <span>N</span>
+                    <span>G</span>
+                </h1>
+                </section>
+                <div class="animation1"></div>
+                <div class="animation2"></div>  
+
+            <h2 style="font-family: 'Kanit', sans-serif;"><b> 🌲 Annual Summer Camp Trip To-Bring List 🌲 </b></h2>
+            <h3 style="font-family: 'Kanit', sans-serif;"><b> What Should We Bring?  </b></h3>
+            <hr class="fphr"> 
+
+            <h4 style="font-family: 'Kanit', sans-serif;"><b> These are the types of categories. Click on them to see each color!  </b></h4>
+            <div id="category">
+              
+              <input type="radio" name="category" value="meat" id="meat" checked>
+              <label for="meat"><i class="cat"></i> Meat</label>
+              
+              <input type="radio" name="category" value="veg" id="veg" checked>
+              <label for="veg"><i class="cat"></i> Vegetables</label>
+
+              <input type="radio" name="category" value="drinks" id="drinks" checked>
+              <label for="drinks"><i class="cat"></i> Drinks</label>
+
+              <input type="radio" name="category" value="ss" id="ss" checked>
+              <label for="ss"><i class="cat"></i> Salty/Sweet</label>
+
+              <input type="radio" name="category" value="other" id="other" checked>
+              <label for="other"><i class="cat"></i> Other</label>
+            </div>
+            <h5>break</h5>
+            <hr class="fphr">
+            <h4 style="font-family: 'Kanit', sans-serif;"><b> Please fill in your name, the category, and specify what you are bringing.  </b></h4>
+			
+			<input type="text" id="Name" placeholder="Kachia" class="placeholder1">
+			<input type="text" id="Category" placeholder="Meat" class="placeholder2">
+			<input type="text" id="Item" placeholder="5 packs of ribs" class="placeholder3">
+			<br>
+			<button class="button1" type="button" id="enter" onclick="User()">Enter</button>
+			<button class="button2" type="button" id="overview" onclick="Reveal()">Overview</button>
+
+            <div id="localStorageOutput"></div>
+            
+            <h5>break</h5>
+            <hr class="fphr">
+
+            <h2 style="font-family: 'Kanit', sans-serif;"><b> 🌲 Scroll below to see the different type of activites we will do. 🌲 </b></h2>
+            <hr class="fphr"> 
+			
+     
+            <h5>break</h5>
+       
+            <div class="container">
+                <img src="/code/levelitup/canoe.jpg" alt="Avatar" class="image" style="width:80%">
+                <div class="middle">
+                  <div class="text">Canoeing</div>
+            </div>
+            </div>
+            <div class="container1">
+            <img src="/code/levelitup/stargazing.jpg" alt="Avatar" class="image1" style="width:80%">
+            <div class="overlay">
+                <div class="text1">Stargazing</div>
+                </div>
+            </div>
+
+            <p style="font-family: 'Kanit', sans-serif;">Swimming</p>
+            <img id=one src="/code/levelitup/swimming.jpg" alt="Swimming" width="400" height="500">
+
+           
+
+         
+
+              <div class="slideshow" style="width:300px">
+                <img class="mySlides" src="/code/levelitup/marshmallow.png" style="width:100%">
+                <img class="mySlides" src="/code/levelitup/hiking.png" style="width:100%">
+                <img class="mySlides" src="/code/levelitup/fishing.png" style="width:100%">
+              </div>
+              
+              <script>
+              var myIndex = 0;
+              carousel();
+              
+              function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 500); 
+              }
+              </script>
+
+        	</main>
+    </body>
+</html>
