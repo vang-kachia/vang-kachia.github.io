@@ -63,7 +63,7 @@ position: absolute;
 top: 60;
 left: 10;
 width: 77.7%;
-height: 15%;
+height: 16%;
 background: linear-gradient(to right, rgb(148, 153, 151),rgb(0, 88, 29),rgb(65, 219, 90),rgb(118, 50, 158),rgb(0, 24, 129),rgb(0, 8, 46));
 mix-blend-mode: color;
 pointer-events: none;
@@ -209,7 +209,7 @@ h1, h2{
     box-shadow: 10px 10px 5px rgb(144, 89, 196);
     margin-left: 50px;
     -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
-    transition: width 1s;
+    transition: width 2s;
   }
   
   input.placeholder1:hover {
@@ -416,7 +416,7 @@ width: 50%;
         overflow: hidden;
         width: 80%;
         height: 0;
-        transition: .5s ease;
+        transition: 1s ease;
       }
       
       .container1:hover .overlay {
@@ -483,11 +483,11 @@ background: url(/code/levelitup/happyface.png);
 display: block;
 position: absolute;
 padding-top: 80%;
-padding-right: 60%;
+padding-right: 40%;
 margin-right: 200px;
 margin-top: -100%;
 opacity: 0;
-transition: all 0.6s
+transition: all 0.8s
 }
       
 .domB1:active:after {
@@ -515,7 +515,7 @@ box-shadow: 0 9px #999;
 .domB2:active {
 background-color: #3e8e41;
 box-shadow: 0 5px #666;
-transform: translateY(4px);
+transform: translateY(30px);
 }
             
 .domB3 {
@@ -536,9 +536,34 @@ box-shadow: 0 9px #999;
 .domB3:active {
 background-color: #3e8e41;
 box-shadow: 0 5px #666;
-transform: translateY(4px);
+transform: translateY(30px);
 }
-            
+        
+
+#huntBB {
+  color: #000;
+  cursor: pointer;
+  display: inline-block;
+  width: 150px;
+  background: none;
+  border: solid 4px #000;
+  padding: 10px;
+  text-align: center;
+  margin-top: 45px;
+  height: 45px;
+  border-radius: 0.25rem;
+  font-family: 'Kanit', sans-serif;
+  }
+        
+  #huntBB:hover {
+  color: rgb(0, 0, 0);
+  background: #a79155;
+  margin-right: 5px;
+  }
+  button {
+  border: 1px solid black;
+  cursor: pointer;
+  }
 .mySlides {display:none;}
 
 

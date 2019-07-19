@@ -76,6 +76,18 @@
                   <div class="text">Canoeing</div>
             </div>
             </div>
+
+            <p style="font-family: 'Kanit', sans-serif;">Scavenger Hunt</p>
+
+            <img id="hunt" src="levelitup/hunt.jpg" alt="Hunt" width="400" height="530">
+            <div id="picSlideContainer">
+            <br>
+            <input type="range" value="50" min="1" max="100" id="picWidth"
+            oninput="adjustPercentage(this.value)" onchange="adjustPercentage(this.value)">
+            <span id="picSliderOutput"></span>
+            <button type="button" onclick="adjustPicture()" id="huntBB" class="huntB">Zoom in for Details</button>
+            </div>
+
             <div class="container1">
             <img src="/code/levelitup/stargazing.jpg" alt="Avatar" class="image1" style="width:80%">
             <div class="overlay">
@@ -85,6 +97,9 @@
 
             <p style="font-family: 'Kanit', sans-serif;">Swimming</p>
             <img id=one src="/code/levelitup/swimming.jpg" alt="Swimming" width="400" height="500">
+
+
+
 
             <h5>break</h5>
 

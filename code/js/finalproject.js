@@ -28,3 +28,14 @@ var addText = document.createTextNode(text),
 pId1 = document.getElementById("pId1");
 pId1.appendChild(addText);
 }
+
+function adjustPicture() {
+    var picWidth = document.getElementById("picWidth").value;
+    document.getElementById("hunt").style.width = picWidth + '%'; 
+    }
+    function adjustPercentage(percentage) {
+    document.getElementById("picSliderOutput").innerHTML = percentage + '%';
+    }
+    function adjustPixels(pixels) {
+    document.getElementById("textSliderOutput").innerHTML = pixels + ' px';
+    }
