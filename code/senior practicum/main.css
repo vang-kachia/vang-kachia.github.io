@@ -1,0 +1,384 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600|Sorts+Mill+Goudy:400,400i');
+
+/* ***LOGO & BODY*** */
+
+
+
+body {
+  font-family: 'Sorts Mill Goudy', serif;
+	min-width: 1000px;
+	margin: 0px;
+	padding: 0px;
+}
+
+header {
+	height: 100%;
+	margin: auto;
+	overflow: hidden;
+	background-color: #fceded;
+}
+
+
+header .logo{
+	position: relative;
+	text-align: center;
+	margin: auto;
+}
+
+header img{
+  height: 120px;
+  padding: 30px 0 30px 0;
+}
+
+#logotitle {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	margin-top: -60px;
+	text-align: center;
+	
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Open Sans', sans-serif;
+}
+
+/* ***NAVIGATION TABS*** */
+
+#mainnav {
+	height: 100px;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	background-color: rgb(255, 255, 255);
+	width: 100%;
+	margin: auto;
+	
+}
+
+#mainnav ul {
+    padding-top: 400px;
+	margin: 0px;
+	list-style: none;
+	width: 100%;
+	padding: 40px 0px 0px 0px;
+
+}
+	
+#mainnav li { /* button*/
+	display: inline;
+    background: none;
+    border: 0;
+    box-sizing: border-box;
+    margin: .5em;
+    padding: .5em .8em;
+     /*box-shadow: inset 0 0 0 2px #0d2c3c;*/
+    font-size: inherit;
+    position: relative;
+    vertical-align: middle;
+}
+
+#mainnav a {
+	font-size: 1.10em;
+	color: #3a3e41; /* Cyprus*/
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 0em .8em;
+	margin: 1em 1em 1em 1em;
+    -webkit-transition: -webkit-transform 0.2s;
+	transition: transform 0.2s;
+}
+
+a.menu:hover{
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+a.menu::before {
+	position: absolute;
+	top: -2px;
+	left: -7px;
+	box-sizing: content-box;
+	padding: 0 5px;
+	width: 100%;
+	height: 100%;
+	border: 2px solid #91875c; 
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+	transition: opacity 0.2s, transform 0.2s;
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+a.menu:hover::before{
+	opacity: 1;
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+section {
+    text-align: center;
+}
+
+#mainnav a:hover {
+	color: #e99494;  /*SeaFloor*/
+}
+	
+
+/* Footer  */
+footer {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #fceded;
+	margin: 0px;
+	height: 80px;
+}
+
+.navigation {
+	text-align: right;
+	width: 100%;
+}
+.copyright {
+	font-family: 'Open Sans', sans-serif;
+	float: left;
+	width: 300px;
+	margin-left: 77px;
+	margin-top: -50px;
+	text-align: left;
+	font-size: .9em;
+	color: black;
+}
+
+#footernav {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	height: 80px;
+	
+	
+}
+
+
+/* ***FORM SUBMISSION*** */
+
+
+
+
+.wrapper {
+	height: 700px;
+	
+}
+.imageholder {
+	position: absolute;
+	left: 100px;
+	top: 530px;
+	height: 280px;
+	margin: 0px auto;
+	
+}
+
+.contactinfo {
+	position: absolute;
+	left: 100px;
+	top: 350px;
+	text-align: left;
+	font-family: 'Open Sans', sans-serif;
+	width: 400px;
+	margin: 0;
+	height: auto;
+	}
+
+.form {
+	position: absolute;
+	left: 600px;
+	height: 520px;
+	margin: 0;
+}
+
+#submitbutton {
+	position: absolute;
+	top: 630px;
+	left:930px;
+	background-color: #e55052;
+	height: 60px;
+	width: 130px;
+	margin: 0;
+}
+
+#submitbutton h2 {
+	font-weight: lighter;
+	color: white;
+	font-size: 1em;
+	padding: 5px 35px 5px 35px;
+}
+
+
+
+/* *****PACKAGES PAGE*****  */
+
+
+
+
+.example_img_trans {
+	transition: .3s;
+	transform: translateY(1em);
+}
+
+/* Maternity Package */
+
+#maternitypic {
+	position: absolute;
+	left: 100px;
+	height: 570px;
+	width: 390px;
+}
+
+#maternitybox {
+	position: absolute;
+	left: 92px;
+	height: 560.5px;
+	width: 390px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.3em;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 45px;
+	visibility: hidden;
+	opacity: 0;
+	background-color: #fceded;
+	border: 8px solid #bdb17a;
+}
+.imagewrap:hover #maternitybox {
+	visibility: visible;
+	opacity: 0.75;
+}
+
+.imagewrap:hover .maternityinfo {
+	transform: translateY(0);
+}
+
+/* Graduation Package */
+
+#graduationpic {
+	position: absolute;
+	left: 515px;
+	height: 480px;
+	width: 310px;
+}
+
+#graduationbox {
+	position: absolute;
+	left: 508px;
+	height: 472px;
+	width: 308.5px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.3em;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 45px;
+	visibility: hidden;
+	opacity: 0;
+	background-color: #fceded;
+	border: 8px solid #bdb17a;
+}
+.imagewrap:hover #graduationbox {
+	visibility: visible;
+	opacity: 0.75;}
+
+/* Family Package */
+
+#familypic {
+	position: absolute;
+	left: 850px;
+	height: 335px;
+	width: 410px;
+}
+#familybox {
+	position: absolute;
+	left: 850px;
+	height: 325.5px;
+	width: 399.5px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.3em;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 45px;
+	opacity: 0;
+	background-color: #fceded;
+	border: 8px solid #bdb17a;
+}
+.imagewrap:hover #familybox {
+	visibility: visible;
+	opacity: 0.75;}
+
+/* Newborn Package */
+
+#newbornpic {
+	position: absolute;
+	left: 100px;
+	top: 860px;
+	height: 380px;
+	width: 550px;
+}
+
+#newbornbox {
+	position: absolute;
+	left: 100px;
+	top: 860px;
+	height: 372px;
+	width: 534px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.3em;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 45px;
+	opacity: 0;
+	background-color: #fceded;
+	border: 8px solid #bdb17a
+}
+
+.imagewrap:hover #newbornbox {
+	visibility: visible;
+	opacity: 0.75;}
+
+/* Portrait Package */
+
+#portraitpic {
+	position: absolute;
+	left: 680px;
+	top: 765px;
+	height: 380px;
+	width: 580px;
+}
+
+#portraitbox {
+	position: absolute;
+	left: 680px;
+	top: 765px;
+	height: 372px;
+	width: 572px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.3em;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 45px;
+	opacity: 0;
+	background-color: #fceded;
+	border: 8px solid #bdb17a
+}
+
+.imagewrap:hover #portraitbox {
+	visibility: visible;
+	opacity: 0.75;}
+
+
+
+

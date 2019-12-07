@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Kanda ꓘaptures</title>
+        <meta charset="utf-8"/>
+        <link type="text/css" rel="stylesheet" href="/code/senior practicum/main.css"/>
+        <style>
+            .form {
+            width: 400px;
+            margin: 0 auto;
+            text-align: left;
+            margin-top: 1em;
+            }
+                        
+            .form label {
+            display: block;
+            text-align: left;
+            color: #474429; 
+            font-size: .875em;
+            font-weight: 600;
+            }
+                        
+            .form form .text-input {
+            overflow: hidden;
+            margin-bottom: .875em;
+            }
+                            
+            .form form input[type="text"]{
+            width: 100%;
+            padding: 1em 0 12px;
+            padding-left: 0;
+            background: none;
+            color: black;
+            font-size: 1.2em;
+            font-weight: 400;
+            border: none;
+            border-bottom: 1px solid #999;
+            }
+                                
+            .form form input[type="text"]:focus + .separator {
+            -webkit-transform: scaleX(1) translateY(-2px);
+            transform: scaleX(1) translateY(-2px);
+            opacity: 1;
+            }
+                        
+            .form form input[type="submit"] {
+            color: white;
+            background: #91875c; 
+            padding: .7em 1.1em;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            }
+                        
+            .separator {
+            height: 5px;
+            width: 100%;
+            background: #a7876d;
+            display: block;
+            -webkit-transform: scaleX(0) translateY(-2px);
+            transform: scaleX(0) translateY(-2px);
+            -webkit-transform-origin: 50%;
+            transform-origin: 50%;
+            opacity: 0;
+            transition: all 0.15s linear;
+            }
+                        
+            * :focus {
+            outline-color: transparent;
+            outline-style: none;
+            }
+                        
+            body {
+            font-family: 'Open Sans', sans-serif;
+            background: rgb(255, 255, 255);
+            }
+                        
+            body a { 
+            color: #91875c;
+            font-size: 1em;
+            text-decoration: none;
+            }
+                        
+            .form-bottom {
+            margin-top: 1.25em;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            }                       
+            </style>
+    </head>
+    <body>
+    <header>
+        <div class="logo">
+        <img src="/code/senior practicum/camera.png" alt="Camera Pic">
+        <h1 id="logotitle" style="font-family: 'Lovers Quarrel', cursive;">Kanda ꓘaptures</h1>
+        </div>
+        <nav id="mainnav">
+            <ul>
+                <li class="center" class="link"><a class="menu" href="kandakaptures.html" class="link">Home</a></li>
+                <li class="center" class="link"><a class="menu" href="/code/senior practicum/about.html" class="link">About</a></li>
+                <li class="center" class="link"><a class="menu" href="work.html">Work</a></li>
+                <li class="center" class="link"><a class="menu" href="/code/senior practicum/packages.html">Packages</a></li>
+            </ul>
+        </nav>
+    </header>			
+    <main>
+        <div class="wrapper">
+                <div class="contactinfo">
+                    <p><span class="letswork">Let's Work Together</span><br>
+                    Please fill out this form to discuss/book a session!</p>
+                    <address>
+                        <p><span class="letswork">My Email</span></p>
+                        <p><a id="email" href="mailto:van16010@byui.edu">van16010@byui.edu</a></p>
+                    </address>
+                </div>
+                    
+                <div class="imageholder">
+                    <img id="imagephone" src="68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f6b78476b634e4d3548.gif" alt="Camera GIF">
+                </div>
+            
+                <div class="form" id="designform">
+                    <form action="submission.html" method ="get" onsubmit="return submit_form()">
+                        <div class="text-input">
+                            <label for ="name">Name</label>
+                            <input type ="text" name="name" key="name" value="" id="name" placeholder="Your full name"/>
+                            <span class="separator"></span>
+                        </div>
+                        <div class="text-input">
+                            <label for ="email">Email</label>
+                            <input type ="text" name="email" id="email" placeholder="your@email.com"/>
+                            <span class="separator"></span>
+                        </div>
+                        <div class="text-input">
+                            <label for ="phone">Phone</label>
+                            <input type ="text" name="phone" id="phone" placeholder="(555)000-0000"/>
+                            <span class="separator"></span>
+                        </div>
+                        <input type="submit" value="Submit" id="button">
+                    </form> 
+                </div>                       
+    </main>
+    </body>			
+    <footer>
+            <nav id="footernav">     
+            </nav>
+            <div class="copyright">
+                <p>All content &copy; Kanda ꓘaptures</p>
+            </div>
+    </footer>
+    </html>
+
+    <script>
+    function submit_form() {
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var phone = document.getElementById('phone').value;
+                        
+        if(name == "" || email == ""|| phone == "") {
+            alert('Please fill in all fields');
+        return false;
+        } else {
+            return true;
+            }
+    }   
+               
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+           
